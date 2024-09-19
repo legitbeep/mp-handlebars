@@ -1,0 +1,47 @@
+{
+    "REGISTRATION_REMINDER": {
+      "title": "Này bạn, chúng ta có một sứ mệnh mới!",
+      "body": "Sứ mệnh giúp người Việt mạnh mẽ hơn về mặt tinh thần.",
+      "imageUrl": ""
+    },
+    "THERAPY_REMINDER": {
+        "title": "Đã đến lúc dành thời gian cho bản thân bạn ⏱️",
+        "body": "Hey {user_name}, buổi hẹn của bạn với {therapist_name} sắp đến rồi.",
+        "imageUrl": ""
+    },
+    "THERAPY_FEEDBACK": {
+        "title": "Chúng tôi rất tự hào về bạn! ✨",
+        "body": "Một trái tim dành tặng bạn sau buổi đầu tiên nè. Bạn thấy sao - chúng tôi muốn nghe từ bạn :)",
+        "imageUrl": ""
+    },
+    "THERAPY_HOMEWORK": {
+        "title": "Bạn có một bài tập. 👀",
+        "body": "Như đã hứa, bác sĩ tâm lý đã để lại một lời nhắn cho bạn. Bạn hãy xem qua nhé!",
+        "imageUrl": ""
+    },
+    "INCOMPLETE_SESSION_BOOKING_REMINDER": {
+        "title": "Bác sĩ tâm lý luôn có mặt bất cứ lúc nào. 💛",
+        "body": "Bạn đã chọn đúng người rồi Có thể bạn sẽ cảm thấy chút ngại ngùng, nhưng bạn chỉ còn một bước cuối nữa thôi  ➡️",
+        "metaData": {
+            "deeplink": "{deeplink}"
+        }
+    },
+    "THERAPIST_MATCH_NOTIFICATION": {
+        "title": "Bạn đã quẹt 🔥",
+        "body": "được “bác sĩ tâm lý phù hợp nhất dành cho bạn.\nHãy xem thử hồ sơ của họ nhé 😉",
+        "imageUrl": "",
+        "metaData": {
+            "deeplink": "/therapy/get-matched"
+        }
+    },
+    "SLOT_REMINDER_NOTIFICATION": {
+        "title": "Đến giờ chăm sóc sức khỏe rồi 💛",
+        "body": "{name} đã mở một chỗ ngồi mới. Đặt ngay thôi!",
+        "imageUrl": ""
+    },
+    "THERAPY_DAY_REMINDER": {
+        "title": "Nhắc bạn: hôm nay là ngày chăm sóc bản thân đó! 💛",
+        "body": "Mở ứng dụng để xem thời gian và chế độ.:)\nHãy tận hưởng nó nhé.😊",
+        "imageUrl": ""
+    }
+}

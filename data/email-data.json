@@ -1,0 +1,212 @@
+[
+    {
+        "parent": "FIRST_THERAPY_REMINDER",
+        "templates": [
+            {
+                "language": "vi",
+                "body": "email/vi/first_therapy_reminder.handlebars",
+                "subject": " Lẽ ra tôi không nên đợi để điều trị…"
+            },
+            {
+                "language": "id",
+                "body": "email/id/first_therapy_reminder.handlebars",
+                "subject": " Saya seharusnya tidak menunggu untuk menjalani terapi…"
+            }
+        ]
+    },
+    {
+        "parent": "FORGOT_PASSWORD",
+        "templates": [
+            {
+                "language": "vi",
+                "body": "email/vi/forgot_password.handlebars",
+                "subject": "Đặt lại mật khẩu trên ứng dụng MindPeers của bạn"
+            },
+            {
+                "language": "id",
+                "body": "email/id/forgot_password.handlebars",
+                "subject": "Reset kata sandi di aplikasi MindPeers Anda"
+            }
+        ]
+    },
+    {
+        "parent": "NEW_USER",
+        "templates": [
+            {
+                "language": "vi",
+                "body": "email/vi/new_user.handlebars",
+                "subject": "Xin chào, Chào mừng đến với MindPeers!"
+            },
+            {
+                "language": "id",
+                "body": "email/id/new_user.handlebars",
+                "subject": "Halo, Selamat Datang di MindPeers!"
+            }
+        ]
+    },
+    {
+        "parent": "REFERRAL_REWARD",
+        "templates": [
+            {
+                "language": "vi",
+                "body": "email/vi/referral_reward.handlebars",
+                "subject": "Lời giới thiệu của bạn đã mang lại hy vọng 🌟"
+            },
+            {
+                "language": "id",
+                "body": "email/id/referral_reward.handlebars",
+                "subject": "Referensi Anda telah membawa harapan 🌟"
+            }
+        ]
+    },
+    {
+        "parent": "SESSION_BOOKING_THERAPIST",
+        "templates": [
+            {
+                "language": "vi",
+                "body": "email/vi/session_booking_therapist.handlebars",
+                "subject": "Thông báo của nhà trị liệu cho phiên đã đặt"
+            },
+            {
+                "language": "id",
+                "body": "email/id/session_booking_therapist.handlebars",
+                "subject": "Pemberitahuan terapis untuk sesi yang dipesan"
+            }
+        ]
+    },
+    {
+        "parent": "SESSION_BOOKING",
+        "templates": [
+            {
+                "language": "vi",
+                "body": "email/vi/session_booking.handlebars",
+                "subject": "Bạn có cuộc hẹn mới :D"
+            },
+            {
+                "language": "id",
+                "body": "email/id/session_booking.handlebars",
+                "subject": "Anda punya janji baru :D"
+            }
+        ]
+    },
+    {
+        "parent": "SESSION_CANCEL_THERAPIST",
+        "templates": [
+            {
+                "language": "vi",
+                "body": "email/vi/session_cancel_therapist.handlebars",
+                "subject": "Thông báo của nhà trị liệu về phiên bị hủy"
+            },
+            {
+                "language": "id",
+                "body": "email/id/session_cancel_therapist.handlebars",
+                "subject": "Pemberitahuan terapis untuk sesi dibatalkan"
+            }
+        ]
+    },
+    {
+        "parent": "SESSION_CANCEL",
+        "templates": [
+            {
+                "language": "vi",
+                "body": "email/vi/session_cancel.handlebars",
+                "subject": "Phiên của bạn đã bị hủy"
+            },
+            {
+                "language": "id",
+                "body": "email/id/session_cancel.handlebars",
+                "subject": "Sesi Anda telah dibatalkan"
+            }
+        ]
+    },
+    {
+        "parent": "SESSION_REMINDER",
+        "templates": [
+            {
+                "language": "vi",
+                "body": "email/vi/session_reminder.handlebars",
+                "subject": "Lời nhắc phiên"
+            },
+            {
+                "language": "id",
+                "body": "email/id/session_reminder.handlebars",
+                "subject": "Pengingat sesi"
+            }
+        ]
+    },
+    {
+        "parent": "SESSION_RESCHEDULE",
+        "templates": [
+            {
+                "language": "vi",
+                "body": "email/vi/session_reschedule.handlebars",
+                "subject": "Phiên của bạn đã được lên lịch lại"
+            },
+            {
+                "language": "id",
+                "body": "email/id/session_reschedule.handlebars",
+                "subject": "Sesi Anda telah dijadwalkan ulang"
+            }
+        ]
+    },
+    {
+        "parent": "SESSION_RESCHEDULE_THERAPIST",
+        "templates": [
+            {
+                "language": "vi",
+                "body": "email/vi/session_reschedule_therapist.handlebars",
+                "subject": "Thông báo của nhà trị liệu về việc lên lịch lại phiên"
+            },
+            {
+                "language": "id",
+                "body": "email/id/session_reschedule_therapist.handlebars",
+                "subject": "Pemberitahuan terapis untuk penjadwalan ulang sesi"
+            }
+        ]
+    },
+    {
+        "parent": "SIGNUP_USER",
+        "templates": [
+            {
+                "language": "vi",
+                "body": "email/vi/signup_user.handlebars",
+                "subject": "Chào mừng đến với MindPeers! Hãy xem cuộc sống của bạn sẽ thay đổi như thế nào."
+            },
+            {
+                "language": "id",
+                "body": "email/id/signup_user.handlebars",
+                "subject": "Selamat datang di MindPeers! Lihat bagaimana hidup Anda akan berubah."
+            }
+        ]
+    },
+    {
+        "parent": "SLOT_REMINDER",
+        "templates": [
+            {
+                "language": "vi",
+                "body": "email/vi/slot_reminder.handlebars",
+                "subject": "Các khe trị liệu hiện đã có sẵn ✨"
+            },
+            {
+                "language": "id",
+                "body": "email/id/slot_reminder.handlebars",
+                "subject": "Slot terapi sekarang tersedia ✨"
+            }
+        ]
+    },
+    {
+        "parent": "VERIFY_USER",
+        "templates": [
+            {
+                "language": "vi",
+                "body": "email/vi/verify_user.handlebars",
+                "subject": "Chúc mừng bạn đã thực hiện bước đầu tiên hướng tới việc tự chăm sóc bản thân với MindPeers!"
+            },
+            {
+                "language": "id",
+                "body": "email/id/verify_user.handlebars",
+                "subject": "Selamat atas langkah pertama menuju perawatan diri bersama MindPeers!"
+            }
+        ]
+    }
+]

@@ -1,0 +1,37 @@
+{
+    "test": {
+        "name": "Diagnostic Test",
+        "description": "This is a test description",
+        "url": "https://dashboard.mindpeers.co/"
+    },
+    "logoUrl": "https://cdn.mindpeers.co/website-images/mp-logo.png",
+    "dashboardUrl": "https://dashboard.mindpeers.co",
+    "store" : {
+        "android": {
+            "url": "https://play.google.com/store/apps/details?id=com.mindpeers",
+            "image": "https://via.placeholder.com/50"
+        },
+        "ios": {
+            "url": "https://play.google.com/store/apps/details?id=com.mindpeers",
+            "image": "https://via.placeholder.com/50"
+        }
+    },
+    "social": {
+        "instagram": {
+            "url": "https://www.instagram.com/mindpeers/",
+            "image": "https://via.placeholder.com/50"
+        },
+        "linkedin": {
+            "url": "https://www.instagram.com/mindpeers/",
+            "image": "https://via.placeholder.com/50"
+        },
+        "twitter": {
+            "url": "https://www.instagram.com/mindpeers/",
+            "image": "https://via.placeholder.com/50"
+        },
+        "whatsapp": {
+            "url": "https://www.instagram.com/mindpeers/",
+            "image": "https://via.placeholder.com/50"
+        }
+    }
+}

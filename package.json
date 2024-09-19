@@ -1,0 +1,18 @@
+{
+  "name": "handlebar-templates",
+  "version": "1.0.0",
+  "description": "",
+  "main": "handlebars-renderer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "zip-template": "tar -zcvf template.tar.gz template"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "handlebars": "^4.7.8",
+    "handlebars-helpers": "^0.10.0",
+    "puppeteer": "^10.1.0"
+  }
+}

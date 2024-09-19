@@ -1,0 +1,179 @@
+{
+  "name": "Life Vitality Scale",
+  "user_name": "Vinay singh",
+  "copyright": "This is MindPeers India Private Limited Copyright 2024. Please do not circulate or modify.",
+  "reference": "Fatigue Severity Scale (FSS) Satisfaction with Life Scale",
+  "date": "2024-03-05T06:32:35.596Z",
+  "logoUrl": "https://cdn.mindpeers.co/website-images/mp-logo.png",
+  "reportUrl": "https://mindpeers-assets-staging.s3.amazonaws.com/diagnostic_test/652862dcf8952c333997fb7e/1fc782f4-7d48-4a3c-969d-6a60c5238810.pdf",
+  "result": {
+       "score": 34,
+       "score_title": "Low Satisfaction & Low Fatigue",
+       "label": "levels of life satisfaction impacted by levels of fatigue"
+  },
+  "isLocked": false,
+  "report": [
+       {
+            "type": "CONNECTED_SECTION",
+            "cards": [
+                 {
+                      "type": "TEXTUAL_POINTER_CONNECTED_HEADING_CARD",
+                      "heading": "Is this something to worry about?",
+                      "pointers": [
+                           "Our contentment with life situations and levels of energy are closely interlinked, both impacting each other in a complex dance.",
+                           "You show high satisfaction and low fatigue.",
+                           "Fatigue has an impact on our psychological well-being, affecting mood, cognition, and motivation. Enhancing life satisfaction can help to navigate fatigue effectively."
+                      ],
+                      "header_color": "#7BB2FB",
+                      "icon": "https://cdn.mindpeers.co/tools/mantra/mantraLogoWOBg.svg",
+                      "isLocked": false
+                 },
+                 {
+                      "type": "TEXTUAL_POINTER_CONNECTED_HEADING_CARD",
+                      "heading": "Can you tell me where this is coming from?",
+                      "description": "Our expert psychologist assessed your responses thoroughly and this is what is currently contributing to your levels of life satisfaction impacted by levels of fatigue",
+                      "pointers": [
+                           "Ability To Focus",
+                           "Muscle Exhaustion Grade",
+                           "Levels Of Life Satisfaction"
+                      ],
+                      "header_color": "#FEE0AD",
+                      "icon": "https://cdn.mindpeers.co/tools/mantra/mantraLogoWOBg.svg",
+                      "isLocked": false
+                 },
+                 {
+                      "type": "TEXTUAL_POINTER_CONNECTED_HEADING_CARD",
+                      "heading": "Make a conscious effort to reduce this to improve your resilience",
+                      "pointers": [
+                           "Measure Of Idealness",
+                           "Satisfaction With Life",
+                           "Level Of Energy"
+                      ],
+                      "header_color": "#C9B4F2",
+                      "icon": "https://cdn.mindpeers.co/tools/mantra/mantraLogoWOBg.svg",
+                      "isLocked": false
+                 }
+            ]
+       },
+       {
+            "type": "WIDE_SECTION",
+            "cards": [
+                 {
+                      "type": "SMALL_TEXUAL_CARD",
+                      "heading": "Our expert psychologist wants you to know",
+                      "description": "\"Life often throws curveballs at us. These can make you question life or put you in a state of uncertainity. What helps to keep you afloat is the reminder that these are temporary and even the darkest nights end. Remember that healing is not a linear journey, and it's okay to seek help along the way.\"",
+                      "image": "https://cdn.mindpeers.co/tools/mantra/mantraLogoWOBg.svg"
+                 }
+            ]
+       },
+       {
+            "type": "WIDE_POINTER_SECTION",
+            "cards": [
+                 {
+                      "type": "FRAME_POINTER_CARD",
+                      "heading": "What are some behavioural and physiological things that can come up?",
+                      "description": "While it differs from people to people, some common things to lookout for",
+                      "pointers": [
+                           "Noticeable withdrawal from from social interactions",
+                           "This can lead to isolation, often because of perception of difficulty fitting in",
+                           "Not engaging fully in activities that you once found enjoyable",
+                           "Difficulty in resting and struggling to sleep",
+                           "This can cause low energy levels despite apparent rest"
+                      ]
+                 }
+            ]
+       },
+       {
+            "type": "PARALLEL_CARDS_SECTION",
+            "heading": "What are recommendations for your support system?",
+            "image": "https://cdn.mindpeers.co/dark-mode/site-icons/mp_logo.png",
+            "icon": "https://cdn.mindpeers.co/tools/mantra/mantraLogoWOBg.svg",
+            "cards": [
+                 {
+                      "header_color": "#F5F5F5",
+                      "heading": "Relationship support that can help you thrive",
+                      "icon": "https://cdn.mindpeers.co/dark-mode/site-icons/mp_logo.png",
+                      "pointers": [
+                           "Finding meaning in life will help to create the necessary movement, you can create this with the support of those around you ",
+                           " Setting up regular meetups with those close to you ",
+                           " Chart out your intimacy circles: Who are those close to you, now reach out to some of the even distant ones ",
+                           " Start working on a new skill: you'll quite likely meet a new group of people that you will find synergy with ",
+                           " Group meditation is effective as a stress buster as well as an activity you can do with closed ones"
+                      ],
+                      "type": "TEXUAL_POINTER_CARD"
+                 },
+                 {
+                      "header_color": "#F5F5F5",
+                      "heading": "Workplace accommodations that will help you thrive",
+                      "icon": "https://cdn.mindpeers.co/dark-mode/site-icons/mp_logo.png",
+                      "pointers": [
+                           "Work with your manager to reduce spill over effect: effectively do not carry work into post work hours",
+                           "Ensure that your work is planned in such a way that it does not interfere with personal commitment and health habits such as eating a nutritionally rich meal  and exercise regime",
+                           "Team up with a colleague to learn a new skill or master a known skill",
+                           "Schedule meetings in such a way that they serve as nduges and reminders for work tasks"
+                      ],
+                      "type": "TEXUAL_POINTER_CARD"
+                 }
+            ],
+            "footer": {
+                 "image": "https://cdn.mindpeers.co/tools/mantra/mantraLogoWOBg.svg",
+                 "heading": "Take a screenshot and share this with your partner/manager/family"
+            }
+       },
+       {
+            "type": "SMALL_CARD_CONTAINER_SECTION",
+            "cards": [
+                 {
+                      "type": "HALF_WIDTH_CARD",
+                      "heading": "Weekend Read",
+                      "description": "Man's Search for Meaning Man's Search for Meaning Man's Search for Meaning Man's Search for Meaning Man's Search for Meaning",
+                      "image": "https://via.placeholder.com/50",
+                      "cta":{"text":"Read"}
+                 },
+                 {
+                      "type": "HALF_WIDTH_CARD",
+                      "heading": "Movie Night",
+                      "description": "The Secret Life of Walter Mitty",
+                      "image": "https://via.placeholder.com/50",
+                      "cta":{"text":"Watch"}
+                 }
+            ],
+            "heading": "How can you be more informed? for your support system?",
+            "description": "We truly believe that it's super important to understand the neuroscience behind this. We recommend:"
+       },
+       {
+            "type": "SMALL_CARD_CONTAINER_SECTION",
+            "heading": "What next?",
+            "description": "Here are our recommendations:",
+            "cards": [
+                 {
+                      "type": "EMOJI_POINTER_CARD",
+                      "pointers": [
+                           "Practice Radical Acceptance: Life circumstances don't always work as planned, this is where radical acceptance comes in, the act of letting go of control and cultivating compassion. By approaching oneself and others with kindness and understanding, individuals can foster a sense of connection and belonging, even in the face of adversity."
+                      ]
+                 }
+            ]
+       },
+       {
+            "type": "FOOTER_SECTION",
+            "heading": "Closing Note",
+            "description": "Keep track of acts of kindness you provide and receive. This could be through journaling, photography, or creating a scrapbook. You can further journal to reflect on how each act made you feel and the impact it had on others. This can become your light on darkest days.\n\nWith love,\nMindPeers",
+            "icon": "https://cdn.mindpeers.co/tools/mantra/mantraLogoWOBg.svg",
+            "cards": [
+                 {
+                      "image": "https://cdn.mindpeers.co/tools/mantra/mantraLogoWOBg.svg",
+                      "heading": "Avail more tests",
+                      "type": "GRID_CARD"
+                 },
+                 {
+                      "image": "https://cdn.mindpeers.co/tools/mantra/mantraLogoWOBg.svg",
+                      "heading": "Reach out to our therapists",
+                      "type": "GRID_CARD"
+                 }
+            ],
+            "footer": {
+                 "heading": "This is MindPeers India Private Limited Copyright 2024. Please do not circulate or modify."
+            }
+       }
+  ]
+}
