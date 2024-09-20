@@ -1,11 +1,8 @@
 {
-    "name": "Life Vitality Scale",
     "user_name": "Vinay singh",
     "copyright": "This is MindPeers India Private Limited Copyright 2024. Please do not circulate or modify.",
-    "reference": "Fatigue Severity Scale (FSS) Satisfaction with Life Scale",
     "date": "2024-03-05T06:32:35.596Z",
     "logoUrl": "https://cdn.mindpeers.co/website-images/mp-logo.png",
-    "reportUrl": "https://mindpeers-assets-staging.s3.amazonaws.com/diagnostic_test/652862dcf8952c333997fb7e/1fc782f4-7d48-4a3c-969d-6a60c5238810.pdf",
     "result": {
         "focus": 13,
         "productivity": 27,

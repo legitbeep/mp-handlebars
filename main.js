@@ -1,7 +1,7 @@
 const handlebarsRenderer = require("./handlebars-renderer");
 const fs = require("fs");
 const { generatePDF } = require("./pdf-convertor");
-const diagnosticData = require("./data/diagnostic_data.json");
+const diagnosticData = require("./data/cogniart_data.json");
 const signupData = require("./data/signup_user_data.json");
 
 const templateData = {
@@ -46,7 +46,7 @@ const jsonData = diagnosticData;
       jsonData
     );
     await downloadPdf(renderedHtml);
-    // await handlebarsRenderer.saveToHtmlFile(outputPath, renderedHtml);
+    await handlebarsRenderer.saveToHtmlFile(outputPath, renderedHtml);
     console.log("PDF and HTML files saved successfully.");
   } catch (error) {
     console.error("Error:", error);

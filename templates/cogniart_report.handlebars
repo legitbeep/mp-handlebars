@@ -11,11 +11,35 @@
         body{
             background-color: #F9FAFB;
             padding: 32px;
+            font-family: sans-serif;
         }
         .main-container{
             max-width: 872px;
             margin: 0 auto;
             background-color: #FFF;
+            padding: 14px 18px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            border-radius: 8px;
+        }
+        p,span,h1,h2,h3,h4,h5,h6 {
+            margin: 0;
+        }
+        .gray-bg-box {
+            background: #F9FAFB;
+            border-radius: 28px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .score-meta {
+            padding: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            border-top: 2px solid #FFFFFF;
         }
     </style>
   <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700" rel="stylesheet" type="text/css">
@@ -26,51 +50,52 @@
 
 <body style="word-spacing:normal;">
   <header style="margin:0 auto; text-align:center; font-size: 0.75rem; margin: 0.5rem 0;">{{copyright}}</header>
-  <div>
-    <img src={{constants.logoUrl}} alt="logo" style="height: 5rem; width: auto; display: block; margin: 2rem auto;" width="200" />
-    <div class="user-details">
-        <p>Name: {{user_name}}</p>
+  <div style="margin:0 auto;max-width:872px;display:flex; gap:1rem; justify-content: space-between;align-items:center;min-height:9rem;">
+    <img src={{logoUrl}} alt="logo" style="height: 1.5rem; width: auto; display: block;" />
+    <div style="background: #FFFFFF;border-radius: 8px;padding: 8px 12px;color:#090A0B99;">
+        <p style="margin-bottom: 8px;">Name: {{user_name}}</p>
         <p>Date: {{date}}</p>
     </div>
   </div>
   <main class="main-container">
-    <h5>
+    <h1 style="width:100%; text-align:center; margin-bottom: 14px;">
         Art Analysis
-    </h5>
+    </h1>
     <div class="gray-bg-box" style="padding: 1rem 1.5rem;">
-        <p>{{prompt}}</p>
+        <p style="width:100%; text-align:center;">{{prompt}}</p>
     </div>
     <div class="gray-bg-box" style="padding: 1rem 1.5rem;">
-        <img src={{image.url}} alt="song" style="height: auto; width: 100%;" />
+        <img src={{image.url}} alt="art" style="max-height:30rem; max-width:100%; width:auto; display:block; margin:0 auto; object-fit:contain;" />
     </div>
-    <div style="display:flex; gap:1rem; width: 100%; justify-content: space-between; align-items: center;">
-        <h5>
+    <div style="display:flex; gap:1rem; width: 100%; justify-content: space-between; align-items: center;margin: 20px 0;">
+        <h2>
             Executive Function Score
-        </h5>
-        <div class="score-box">
-            <p style="color:#090A0B99;">Score</p>
-            <h6>{{result.score}}</h6>
+        </h2>
+        <div style="position:relative;display:flex;flex-direction:column;align-items:center;justify-content:space-between; gap:16px; margin-right: 20px;">
+            <img src="https://via.placeholder.com/150" alt="art" style="z-index:0;object-fit:cover; border-radius: 50%; width:80px; height:80px; position:absolute; top:-15px; left: -20px;" />
+            <p style="color:#090A0B99;z-index:1;">Score</p>
+            <h4 style="z-index:1;">{{result.score}}</h4>
         </div>
     </div>
-    <div class="gray-bg-box">
-        <h4>Descriptive Analysis</h4>
-        <p style="white-space:pre-line; color: #090A0B99;">{{result.description}}</p>
-        <div class="score-box">
-            <h4 >Focus State</h4>
+    <div class="gray-bg-box" style="padding:16px;">
+        <h2 style="margin-bottom: 16px; width:100%;">Descriptive Analysis</h2>
+        <p style="white-space:pre-line; color: #090A0B99;width:100%;">{{result.description}}</p>
+        <div class="score-meta" style="margin-top:16px">
+            <h3 >Focus State</h3>
             <div style="height:32px; width:32px; border-radius:50%; background-color:#FDBDFF; display:flex; justify-content:center; align-items:center;">
-                <p style="color:#090A0B99;">{{result.focus}}</p>
+                <h3 style="color:#090A0B;">{{result.focus}}</h3>
             </div>
         </div>
-        <div class="score-box">
-            <h4 >Productivity State</h4>            
+        <div class="score-meta">
+            <h3 >Productivity State</h3>            
             <div style="height:32px; width:32px; border-radius:50%; background-color:#FFDF83; display:flex; justify-content:center; align-items:center;">
-                <p style="color:#090A0B99;">{{result.productivity}}</p>
+                <h3 style="color:#090A0B;">{{result.productivity}}</h3>
             </div>
         </div>
-        <div class="score-box">
-            <h4 >Task Management</h4>           
+        <div class="score-meta">
+            <h3 >Task Management</h3>           
             <div style="height:32px; width:32px; border-radius:50%; background-color:#AEDA81; display:flex; justify-content:center; align-items:center;">
-                <p style="color:#090A0B99;">{{result.task_management}}</p>
+                <h3 style="color:#090A0B;">{{result.task_management}}</h3>
             </div>
         </div>
     </div>
