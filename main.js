@@ -6,9 +6,9 @@ const signupData = require("./data/signup_user_data.json");
 
 const templateData = {
   translated: {
-    path: "\\templates\\cogniart_report.handlebars",
-    output: "\\output\\cogniart_report.html",
-    outputPdf: "\\output\\cogniart_report.pdf",
+    path: "\\templates\\cogniart_report_mail.handlebars",
+    output: "\\output\\cogniart_report_mail.html",
+    outputPdf: "\\output\\cogniart_report_mail.pdf",
     data: {
       constants: {
         logoUrl: "https://cdn.mindpeers.co/logos/mindpeers_default.png",
