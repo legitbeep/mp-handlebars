@@ -203,7 +203,7 @@
 
 <body style="word-spacing:normal;">
   <header style="margin:0 auto; text-align:center; font-size: 0.75rem; margin: 0.5rem 0;">{{copyright}}</header>
-  <div style="margin:0 auto;max-width:872px;display:flex; gap:1rem; justify-content: space-between;align-items:center;margin:10px 0;">
+  <div style="margin:10px auto;max-width:872px;display:flex; gap:1rem; justify-content: space-between;align-items:center;">
     <img src={{logoUrl}} alt="logo" style="height: 1.5rem; width: auto; display: block;" />
     <div style="background: #FFFFFF;border-radius: 8px;padding: 8px 12px;color:#090A0B99;">
         <p style="margin-bottom: 8px;" class="caption-text">Name: {{user_name}}</p>
@@ -230,15 +230,25 @@
             <h4 style="z-index:1;font-size:14px;font-weight:600;">{{result.score}}</h4>
         </div>
     </div>
-    <div class="gray-bg-box" style="padding:10px;">
+    <div class="gray-bg-box" style="padding:18px;">
+        
+      {{#ifType result.description 'undefined'}}
+        <div class="score-meta" style="border-top:none">
+            <h3 class="header-text4">Focus State</h3>
+            <div style="height:32px; width:32px; border-radius:50%; background-color:#FDBDFF; display:flex; justify-content:center; align-items:center;">
+                <h3 style="color:#090A0B;" class="body-text1" >{{result.focus}}</h3>
+            </div>
+        </div>
+      {{else}}
         <h2 style="margin-bottom: 10px; width:100%;" class="header-text4">Descriptive Analysis</h2>
-        <p style="white-space:pre-line; color: #090A0B99;width:100%;" class="body-text3">{{result.description}}</p>
+        <p style="white-space:pre-line; color: #090A0B99;width:100%;" class="body-text3">{{result.description}}</p> 
         <div class="score-meta" style="margin-top:16px">
             <h3 class="header-text4">Focus State</h3>
             <div style="height:32px; width:32px; border-radius:50%; background-color:#FDBDFF; display:flex; justify-content:center; align-items:center;">
                 <h3 style="color:#090A0B;" class="body-text1" >{{result.focus}}</h3>
             </div>
         </div>
+      {{/ifType}}
         <div class="score-meta">
             <h3 class="header-text4">Productivity State</h3>            
             <div style="height:32px; width:32px; border-radius:50%; background-color:#FFDF83; display:flex; justify-content:center; align-items:center;">
