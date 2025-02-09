@@ -1,7 +1,7 @@
 {
   "name": "Life Vitality Scale",
   "user_name": "Vinay singh",
-  "copyright": "This is MindPeers India Private Limited Copyright 2024. Please do not circulate or modify.",
+  "copyright": "This is MindPeers India Private Limited Copyright 2025. Please do not circulate or modify.",
   "reference": "Fatigue Severity Scale (FSS) Satisfaction with Life Scale",
   "date": "2024-03-05T06:32:35.596Z",
   "logoUrl": "https://cdn.mindpeers.co/website-images/mp-logo.png",
@@ -13,167 +13,222 @@
   },
   "isLocked": false,
   "report": [
-       {
-            "type": "CONNECTED_SECTION",
-            "cards": [
-                 {
-                      "type": "TEXTUAL_POINTER_CONNECTED_HEADING_CARD",
-                      "heading": "Is this something to worry about?",
-                      "pointers": [
-                           "Our contentment with life situations and levels of energy are closely interlinked, both impacting each other in a complex dance.",
-                           "You show high satisfaction and low fatigue.",
-                           "Fatigue has an impact on our psychological well-being, affecting mood, cognition, and motivation. Enhancing life satisfaction can help to navigate fatigue effectively."
-                      ],
-                      "header_color": "#7BB2FB",
-                      "icon": "https://cdn.mindpeers.co/tools/mantra/mantraLogoWOBg.svg",
-                      "isLocked": false
-                 },
-                 {
-                      "type": "TEXTUAL_POINTER_CONNECTED_HEADING_CARD",
-                      "heading": "Can you tell me where this is coming from?",
-                      "description": "Our expert psychologist assessed your responses thoroughly and this is what is currently contributing to your levels of life satisfaction impacted by levels of fatigue",
-                      "pointers": [
-                           "Ability To Focus",
-                           "Muscle Exhaustion Grade",
-                           "Levels Of Life Satisfaction"
-                      ],
-                      "header_color": "#FEE0AD",
-                      "icon": "https://cdn.mindpeers.co/tools/mantra/mantraLogoWOBg.svg",
-                      "isLocked": false
-                 },
-                 {
-                      "type": "TEXTUAL_POINTER_CONNECTED_HEADING_CARD",
-                      "heading": "Make a conscious effort to reduce this to improve your resilience",
-                      "pointers": [
-                           "Measure Of Idealness",
-                           "Satisfaction With Life",
-                           "Level Of Energy"
-                      ],
-                      "header_color": "#C9B4F2",
-                      "icon": "https://cdn.mindpeers.co/tools/mantra/mantraLogoWOBg.svg",
-                      "isLocked": false
-                 }
-            ]
+     {
+          "type": "GRAPH_SECTION",
+          "cards":[
+               {
+                    "type": "BAR",
+                    "description":"High Avoidant, High Anxious, High Secure",
+                    "data": [
+                         {
+                              "name":"Avoidant",
+                              "value": 24,
+                              "max_value": 30,
+                              "color":"#16A693"
+                         },
+                         {
+                              "name":"Anxious",
+                              "value": 24,
+                              "max_value": 30,
+                              "color":"#1A8576"
+                         },
+                         {
+                              "name":"Secure",
+                              "value": 24,
+                              "max_value": 30,
+                              "color":"#20898E"
+                         }
+                    ]
+               },
+               {
+                    "type": "METER",
+                    "title":"SRRS SCORE",
+                    "value": 100,
+                    "max_value": 100
+               }
+          ]
+     },
+     {
+          "type":"QUESTIONS_SECTION",
+          "cards":[
+               {
+                    "heading": "Is this something to worry about?",
+                    "description": {
+                         "data": [
+                         {
+                              "text": "{{PARTA}}",
+                              "substitute": "you've encountered major stressors recently, and your body and mind are working overtime to adjust",
+                              "type": "TEXT",
+                              "color": "#090A0B99",
+                              "highlight_color": "#16A693"
+                         }
+                    ],
+                    "text": "Right now, life might feel like you're juggling too many balls in the air—some are rubber and will bounce back, but others feel like glass — fragile and overwhelming. Your score suggests that {{PARTA}}. Stress, in itself, isn't bad—it's your system's way of responding to change. But prolonged, intense stress can take a toll, making it essential to slow down and regain control."
+                    },
+                    "image": "https://cdn.mindpeers.co/dark-mode/tools/diagnostic-test/report/doubt-person.svg"
+               },
+               {
+                    "heading": "What does it mean?",
+                    "description": {
+                         "data": [
+                         {
+                              "text": "{{PARTA}}",
+                              "substitute": "you've encountered major stressors recently, and your body and mind are working overtime to adjust",
+                              "type": "TEXT",
+                              "color": "#090A0B99",
+                              "highlight_color": "#16A693"
+                         }
+                    ],
+                    "text": "Right now, life might feel like you're juggling too many balls in the air—some are rubber and will bounce back, but others feel like glass — fragile and overwhelming. Your score suggests that {{PARTA}}. Stress, in itself, isn't bad—it's your system's way of responding to change. But prolonged, intense stress can take a toll, making it essential to slow down and regain control."
+                    },
+                    "image": "https://cdn.mindpeers.co/dark-mode/tools/diagnostic-test/report/think-person.svg"
+               }
+          ]
+     },
+     {
+          "type": "BG_IMAGE_SECTION",
+          "background": "https://cdn.mindpeers.co/dark-mode/tools/diagnostic-test/report/graph-bg.png",
+          "question" :"Can you tell me where this is coming from?",
+          "icon":"https://cdn.mindpeers.co/dark-mode/tools/diagnostic-test/report/search-icon.svg",
+          "answers": [
+               "Loss",
+               "Marital Changes",
+               "Career Changes"
+          ]
+       },
+     {
+          "type": "WIDE_SECTION",
+          "cards": [
+               {
+                    "type": "FILLED_WIDE_CARD",
+                    "heading": "Make a conscious effort to reduce this to improve your resilience",
+                    "tags": [
+                         "Housing",
+                         "Education",
+                         "Social Life"
+                    ]
+               }
+          ]
+     },
+     {
+          "type": "IMAGE_BOX_TEXT",
+          "cards": [
+               {
+                    "heading":"Our expert psychologist wants you to know",
+                    "description": "I see you, and I know how much you’re handling. It’s okay to feel stretched thin. You’re adjusting to a lot, and that takes energy. Right now, I want you to shift from ‘I have to get through this’ to ‘How can I support myself through this?’ Small, intentional changes can help you regain a sense of balance. Let’s make that our goal—one step at a time."
+               }
+          ]
+     },
+     {
+          "type": "BG_IMAGE_SECTION",
+          "background": "https://static.vecteezy.com/system/resources/previews/003/604/064/non_2x/surface-space-blank-white-color-background-with-black-grid-space-line-color-surfaces-cyber-technology-banners-covers-terrain-sci-fi-frames-and-related-background-vector.jpg",
+          "heading": "Stress often translates into daily life interference.",
+          "cards": [
+               "Irritability or emotional exhaustion : Small things might trigger frustration or a sense of helplessness.",
+               "Irritability or emotional exhaustion : Small things might trigger frustration or a sense of helplessness.",
+               "Irritability or emotional exhaustion : Small things might trigger frustration or a sense of helplessness.",
+               "Irritability or emotional exhaustion : Small things might trigger frustration or a sense of helplessness.",
+               "Irritability or emotional exhaustion : Small things might trigger frustration or a sense of helplessness."
+          ]
        },
        {
-            "type": "WIDE_SECTION",
-            "cards": [
-                 {
-                      "type": "SMALL_TEXUAL_CARD",
-                      "heading": "Our expert psychologist wants you to know",
-                      "description": "\"Life often throws curveballs at us. These can make you question life or put you in a state of uncertainity. What helps to keep you afloat is the reminder that these are temporary and even the darkest nights end. Remember that healing is not a linear journey, and it's okay to seek help along the way.\"",
-                      "image": "https://cdn.mindpeers.co/tools/mantra/mantraLogoWOBg.svg"
-                 }
-            ]
-       },
-       {
-            "type": "WIDE_POINTER_SECTION",
-            "cards": [
-                 {
-                      "type": "FRAME_POINTER_CARD",
-                      "heading": "What are some behavioural and physiological things that can come up?",
-                      "description": "While it differs from people to people, some common things to lookout for",
-                      "pointers": [
-                           "Noticeable withdrawal from from social interactions",
-                           "This can lead to isolation, often because of perception of difficulty fitting in",
-                           "Not engaging fully in activities that you once found enjoyable",
-                           "Difficulty in resting and struggling to sleep",
-                           "This can cause low energy levels despite apparent rest"
-                      ]
-                 }
-            ]
-       },
-       {
-            "type": "PARALLEL_CARDS_SECTION",
-            "heading": "What are recommendations for your support system?",
-            "image": "https://cdn.mindpeers.co/dark-mode/site-icons/mp_logo.png",
-            "icon": "https://cdn.mindpeers.co/tools/mantra/mantraLogoWOBg.svg",
-            "cards": [
-                 {
-                      "header_color": "#F5F5F5",
-                      "heading": "Relationship support that can help you thrive",
-                      "icon": "https://cdn.mindpeers.co/dark-mode/site-icons/mp_logo.png",
-                      "pointers": [
-                           "Finding meaning in life will help to create the necessary movement, you can create this with the support of those around you ",
-                           " Setting up regular meetups with those close to you ",
-                           " Chart out your intimacy circles: Who are those close to you, now reach out to some of the even distant ones ",
-                           " Start working on a new skill: you'll quite likely meet a new group of people that you will find synergy with ",
-                           " Group meditation is effective as a stress buster as well as an activity you can do with closed ones"
-                      ],
-                      "type": "TEXUAL_POINTER_CARD"
-                 },
-                 {
-                      "header_color": "#F5F5F5",
-                      "heading": "Workplace accommodations that will help you thrive",
-                      "icon": "https://cdn.mindpeers.co/dark-mode/site-icons/mp_logo.png",
-                      "pointers": [
-                           "Work with your manager to reduce spill over effect: effectively do not carry work into post work hours",
-                           "Ensure that your work is planned in such a way that it does not interfere with personal commitment and health habits such as eating a nutritionally rich meal  and exercise regime",
-                           "Team up with a colleague to learn a new skill or master a known skill",
-                           "Schedule meetings in such a way that they serve as nduges and reminders for work tasks"
-                      ],
-                      "type": "TEXUAL_POINTER_CARD"
-                 }
-            ],
-            "footer": {
-                 "image": "https://cdn.mindpeers.co/tools/mantra/mantraLogoWOBg.svg",
-                 "heading": "Take a screenshot and share this with your partner/manager/family"
-            }
-       },
-       {
-            "type": "SMALL_CARD_CONTAINER_SECTION",
-            "cards": [
-                 {
-                      "type": "HALF_WIDTH_CARD",
-                      "heading": "Weekend Read",
-                      "description": "Man's Search for Meaning Man's Search for Meaning Man's Search for Meaning Man's Search for Meaning Man's Search for Meaning",
-                      "image": "https://via.placeholder.com/50",
-                      "cta":{"text":"Read"}
-                 },
-                 {
-                      "type": "HALF_WIDTH_CARD",
-                      "heading": "Movie Night",
-                      "description": "The Secret Life of Walter Mitty",
-                      "image": "https://via.placeholder.com/50",
-                      "cta":{"text":"Watch"}
-                 }
-            ],
-            "heading": "How can you be more informed? for your support system?",
-            "description": "We truly believe that it's super important to understand the neuroscience behind this. We recommend:"
-       },
-       {
-            "type": "SMALL_CARD_CONTAINER_SECTION",
-            "heading": "What next?",
-            "description": "Here are our recommendations:",
-            "cards": [
-                 {
-                      "type": "EMOJI_POINTER_CARD",
-                      "pointers": [
-                           "Practice Radical Acceptance: Life circumstances don't always work as planned, this is where radical acceptance comes in, the act of letting go of control and cultivating compassion. By approaching oneself and others with kindness and understanding, individuals can foster a sense of connection and belonging, even in the face of adversity."
-                      ]
-                 }
-            ]
-       },
-       {
-            "type": "FOOTER_SECTION",
-            "heading": "Closing Note",
-            "description": "Keep track of acts of kindness you provide and receive. This could be through journaling, photography, or creating a scrapbook. You can further journal to reflect on how each act made you feel and the impact it had on others. This can become your light on darkest days.\n\nWith love,\nMindPeers",
-            "icon": "https://cdn.mindpeers.co/tools/mantra/mantraLogoWOBg.svg",
-            "cards": [
-                 {
-                      "image": "https://cdn.mindpeers.co/tools/mantra/mantraLogoWOBg.svg",
-                      "heading": "Avail more tests",
-                      "type": "GRID_CARD"
-                 },
-                 {
-                      "image": "https://cdn.mindpeers.co/tools/mantra/mantraLogoWOBg.svg",
-                      "heading": "Reach out to our therapists",
-                      "type": "GRID_CARD"
-                 }
-            ],
-            "footer": {
-                 "heading": "This is MindPeers India Private Limited Copyright 2024. Please do not circulate or modify."
-            }
-       }
+          "type": "PARALLEL_CARDS_SECTION",
+          "heading": "What are the recommendations for your support system?",
+          "cards": [
+               {
+                    "header_color": "#16A693",
+                    "heading": "Relationship support that can help you thrive",
+                    "description": "Hey, I know you care about me, and I appreciate it more than I say. Right now, life feels overwhelming, and I may not always know how to ask for help. If you want to support me,",
+                    "image": "https://static.desygner.com/wp-content/uploads/sites/13/2022/05/04141642/Free-Stock-Photos-01.jpg",
+                    "pointers_title": "Here's what can help :",
+                    "pointers": [
+                         "Finding meaning in life will help to create the necessary movement, you can create this with the support of those around you ",
+                         " Setting up regular meetups with those close to you ",
+                         " Chart out your intimacy circles: Who are those close to you, now reach out to some of the even distant ones ",
+                         " Start working on a new skill: you'll quite likely meet a new group of people that you will find synergy with ",
+                         " Group meditation is effective as a stress buster as well as an activity you can do with closed ones"
+                    ],
+                    "type": "POINTER_CARD"
+               },
+               {
+                    "header_color": "#16A693",
+                    "heading": "Workplace accommodations that will help you thrive",
+                    "description": "Work stress is often one of the biggest stressors.",
+                    "image": "https://static.desygner.com/wp-content/uploads/sites/13/2022/05/04141642/Free-Stock-Photos-01.jpg",
+                    "pointers_title": "Here's what can help :",
+                    "pointers": [
+                         "Work with your manager to reduce spill over effect: effectively do not carry work into post work hours",
+                         "Ensure that your work is planned in such a way that it does not interfere with personal commitment and health habits such as eating a nutritionally rich meal  and exercise regime",
+                         "Team up with a colleague to learn a new skill or master a known skill",
+                         "Schedule meetings in such a way that they serve as nduges and reminders for work tasks"
+                    ],
+                    "type": "POINTER_CARD"
+               }
+          ]
+     },
+     {
+        "type": "PARALLEL_CARDS_SECTION",
+        "sub_heading": "Based on your score, here's how you can dive deeper into understanding and improving your emotional well-being:",
+        "cards": [
+             {
+                  "header_color": "#090A0B",
+                  "heading": "📚 Love Books? Start Here",
+                  "image": "https://static.desygner.com/wp-content/uploads/sites/13/2022/05/04141642/Free-Stock-Photos-01.jpg",
+                   "description": "Option B, by Sheryl Sandberg and Adam Grant",
+                  "type": "FILLED_CARD",
+                  "background": "#F5FBFA"
+             },
+             {
+                  "header_color": "#090A0B",
+                  "heading": "Workplace accommodations that will help you thrive",
+                  "image": "https://static.desygner.com/wp-content/uploads/sites/13/2022/05/04141642/Free-Stock-Photos-01.jpg",
+                  "description": "Brave",
+                  "type": "FILLED_CARD",
+                  "background": "#F5FBFA"
+             }
+        ]
+   },
+   {
+      "type": "PARALLEL_CARDS_SECTION",
+      "heading": "What next?",
+      "cards": [
+           {
+                "header_color": "#090A0B",
+                "heading": "Small Hack",
+                "image": "https://cdn.mindpeers.co/dark-mode/tools/diagnostic-test/report/idea-icon.png",
+                 "description": "When stress spikes, use this trick:\n5 things you can see\n4 things you can touch\n3 things you can hear\n2 things you can smell\n1 thing you can taste\nThis brings your mind back to the present and out of the stress spiral",
+                "type": "BG_IMAGE_CARD"
+           },
+           {
+                "header_color": "#090A0B",
+                "heading": "Therapist",
+                "image": "https://cdn.mindpeers.co/dark-mode/tools/diagnostic-test/report/chat-icon.png",
+                "description": "You can share this report with our expert psychologists (Therpist name) and (Therpist name) who specialise in working with your concerns.",
+                "type": "BG_IMAGE_CARD"
+           }
+      ]
+ },
+ {
+      "type": "FOOTER_SECTION",
+      "description": "You are not just surviving this—you are learning, adapting, and growing through it. Remember the ‘Tend-and-Befriend’ response—stress doesn’t always have to mean fight or flight. Sometimes, reaching out, nurturing connections, and allowing yourself to receive support is the most powerful way to regain balance.",
+      "icon": "https://cdn.mindpeers.co/tools/mantra/mantraLogoWOBg.svg",
+      "logo": "https://cdn.mindpeers.co/website-images/mp-logo.png",
+      "cards": [
+           {
+                "image": "https://cdn.mindpeers.co/tools/mantra/mantraLogoWOBg.svg",
+                "heading": "Avail more tests",
+                "type": "GRID_CARD"
+           },
+           {
+                "image": "https://cdn.mindpeers.co/tools/mantra/mantraLogoWOBg.svg",
+                "heading": "Reach out to our therapists",
+                "type": "GRID_CARD"
+           }
+      ],
+      "footer": {
+           "heading": "This is MindPeers India Private Limited Copyright 2024. Please do not circulate or modify."
+      }
+ }
+
   ]
 }

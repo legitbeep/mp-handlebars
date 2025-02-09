@@ -1,14 +1,14 @@
 const handlebarsRenderer = require("./handlebars-renderer");
 const fs = require("fs");
 const { generatePDF } = require("./pdf-convertor");
-const diagnosticData = require("./data/cogniart_data.json");
+const diagnosticData = require("./data/diagnostic_data.json");
 const signupData = require("./data/signup_user_data.json");
 
 const templateData = {
   translated: {
-    path: "\\templates\\cogniart_report.handlebars",
-    output: "\\output\\test.html",
-    outputPdf: "\\output\\test.pdf",
+    path: "\\templates\\diagnostic_test_report.handlebars",
+    output: "\\output\\diagnostic_test_report.html",
+    outputPdf: "\\output\\diagnostic_test_report.pdf",
     data: {
       constants: {
         logoUrl: "https://cdn.mindpeers.co/logos/mindpeers_default.png",
@@ -21,6 +21,7 @@ const templateData = {
       },
       otp: 234543,
       name: "Harsh",
+      ...diagnosticData,
     },
   },
 };
@@ -34,8 +35,7 @@ const templateData = {
 const templatePath = __dirname + "\\" + templateData.translated.path;
 const outputPath = __dirname + `\\` + templateData.translated.output;
 const outputPdfPath = __dirname + `\\` + templateData.translated.outputPdf;
-const jsonData = diagnosticData;
-// templateData.translated.data;
+const jsonData = templateData.translated.data;
 
 // Render the template and save the result to a new HTML file
 // const renderedHtml = handlebarsRenderer.renderTemplate(templatePath, jsonData);
