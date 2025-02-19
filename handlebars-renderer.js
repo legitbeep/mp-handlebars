@@ -57,7 +57,7 @@ Handlebars.registerHelper("numberLoop", function (n, options) {
   let result = "";
   n = parseInt(n, 10);
   for (let i = 0; i < n; i++) {
-    result += options.fn({ number: i, parent: this });
+    result += options.fn({ number: i, fill: this.fill });
   }
 
   return result;
@@ -115,14 +115,16 @@ Handlebars.registerHelper("formatDescription", function (description) {
   }
 
   let formattedText = description.text;
-  const sortedData = [...description.data].sort(
-    (a, b) => b.text.length - a.text.length
-  );
+  const sortedData = description.data;
 
   // Process each substitution
   sortedData.forEach((item) => {
     const textToReplace = item.text.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-    const replacement = `<span style="background-color: ${item.highlight_color}; color: ${item.color}">${item.substitute}</span>`;
+    const replacement = item?.url
+      ? `<a style="color: ${item.color ? item.color : "#16A9B1"};" href="${
+          item.url
+        }" target="_blank">${item.substitute}</a>`
+      : `<span style="background-color: ${item.color}; color: #fff">${item.substitute}</span>`;
     const regex = new RegExp(textToReplace, "g");
     formattedText = formattedText.replace(regex, replacement);
   });
@@ -137,6 +139,34 @@ Handlebars.registerHelper("mod", function (a, b) {
   return a % b;
 });
 
+Handlebars.registerHelper("getIndex", function (array, index) {
+  if (Array.isArray(array) && typeof index === "number") {
+    return array[index];
+  }
+  return "";
+});
+Handlebars.registerHelper("getProp", function (obj, key) {
+  if (obj && typeof obj === "object" && key in obj) {
+    return obj[key];
+  }
+  return ""; // Return empty string if key is not found
+});
+Handlebars.registerHelper("getGraphValue", function (result, index) {
+  if (index < 3) {
+    switch (index) {
+      case 0:
+        return result.part_a_score;
+      case 1:
+        return result.part_b_score;
+      case 2:
+        return result.part_c_score;
+    }
+  }
+  return ""; // Return empty string if key is not found
+});
+Handlebars.registerHelper("subtract", function (a, b) {
+  return a - b;
+});
 /**
  * Render a Handlebars template with the provided JSON data.
  * @param {string} templatePath - Path to the Handlebars template file.

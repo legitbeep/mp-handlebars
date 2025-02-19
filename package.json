@@ -5,7 +5,8 @@
   "main": "handlebars-renderer.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "zip-template": "tar -zcvf template.tar.gz template"
+    "zip-template": "tar -zcvf template.tar.gz template",
+    "start": "node main.js"
   },
   "keywords": [],
   "author": "",

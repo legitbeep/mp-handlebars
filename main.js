@@ -1,7 +1,7 @@
 const handlebarsRenderer = require("./handlebars-renderer");
 const fs = require("fs");
 const { generatePDF } = require("./pdf-convertor");
-const diagnosticData = require("./data/diagnostic_data.json");
+const diagnosticData = require("./data/diagnostic_test.json");
 const signupData = require("./data/signup_user_data.json");
 
 const templateData = {
@@ -10,17 +10,17 @@ const templateData = {
     output: "\\output\\diagnostic_test_report.html",
     outputPdf: "\\output\\diagnostic_test_report.pdf",
     data: {
-      constants: {
-        logoUrl: "https://cdn.mindpeers.co/logos/mindpeers_default.png",
-        dashboardUrl: "https://dashboard.staging.mindpeers.co/zone",
-        test: {
-          name: "Test Name",
-          url: "https://dashboard.staging.mindpeers.co/zone",
-        },
-        ...signupData,
-      },
-      otp: 234543,
-      name: "Harsh",
+      // constants: {
+      //   logoUrl: "https://cdn.mindpeers.co/logos/mindpeers_default.png",
+      //   dashboardUrl: "https://dashboard.staging.mindpeers.co/zone",
+      //   test: {
+      //     name: "Test Name",
+      //     url: "https://dashboard.staging.mindpeers.co/zone",
+      //   },
+      //   ...signupData,
+      // },
+      // otp: 234543,
+      // name: "Harsh",
       ...diagnosticData,
     },
   },
