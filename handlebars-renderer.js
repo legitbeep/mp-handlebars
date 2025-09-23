@@ -130,17 +130,13 @@ Handlebars.registerHelper("formatDescription", function (description) {
   });
   return formattedText;
 });
-Handlebars.registerHelper("getPointerPosition", function (value, max) {
-  const percent = (value / max) * 100;
-  // since container has some width
-  return percent - 5;
-});
 Handlebars.registerHelper("mod", function (a, b) {
   return a % b;
 });
 
 Handlebars.registerHelper("getIndex", function (array, index) {
   if (Array.isArray(array) && typeof index === "number") {
+    if (index == -1) index = array.length - 1;
     return array[index];
   }
   return "";
@@ -166,6 +162,72 @@ Handlebars.registerHelper("getGraphValue", function (result, index) {
 });
 Handlebars.registerHelper("subtract", function (a, b) {
   return a - b;
+});
+Handlebars.registerHelper("calculateValue", function (value, maxValue) {
+  const TOTAL_WIDTH = 30;
+  return Math.round((value / maxValue) * TOTAL_WIDTH);
+});
+Handlebars.registerHelper(
+  "calculateGaugeWidth",
+  function (value, array, index) {
+    if (!Array.isArray(array) || array.length === 0) {
+      return 0;
+    }
+    return (1 / array.length) * 100;
+  }
+);
+
+Handlebars.registerHelper("getPointerPosition", function (value, arr) {
+  if (!Array.isArray(arr) || arr.length === 0) {
+    return 0;
+  }
+
+  const segmentIndex = arr.findIndex((segment) => {
+    return value <= segment.value;
+  });
+
+  let startVal = segmentIndex == 0 ? 0 : arr[segmentIndex - 1].value;
+  let endVal = arr[segmentIndex].value;
+  const currSegPercent = ((value - startVal) / (endVal - startVal)) * 100;
+
+  console.log({ segmentIndex, currSegPercent, startVal, endVal, value });
+  return `calc(${currSegPercent}% - 34px)`;
+});
+
+// ------------------ Missing helpers ---------------------------
+
+Handlebars.registerHelper("inc", function (v1) {
+  return parseInt(v1) + 1;
+});
+Handlebars.registerHelper("multiply", function (v1, v2) {
+  return v1 * v2;
+});
+Handlebars.registerHelper("divide", function (v1, v2) {
+  return (v1 / v2).toFixed(2);
+});
+Handlebars.registerHelper("reduce", function (v1) {
+  return v1.reduce(
+    (prev, current) => {
+      let summary = current.summary;
+      return {
+        currency: current.currency,
+        subTotal: (Number(prev.subTotal) + summary.total.coupon).toFixed(2),
+        tax: (Number(prev.tax) + summary.tax).toFixed(2),
+        grandTotal: parseFloat(
+          Number(prev.grandTotal) + summary.total.grand.toFixed(2)
+        ).toFixed(2),
+      };
+    },
+    { subTotal: 0, tax: 0, grandTotal: 0 }
+  );
+});
+
+Handlebars.registerHelper("setValue", function (varName, varValue, options) {
+  options.data.root[varName] = varValue;
+});
+// -------------------- New helpers ------------------------------
+Handlebars.registerHelper("currentYear", function () {
+  return new Date().getFullYear();
 });
 /**
  * Render a Handlebars template with the provided JSON data.

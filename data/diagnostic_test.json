@@ -1,28 +1,42 @@
 {
-  "name": "Attachment patterns",
-  "code": "ATTACHMENT-PATTERNS",
-  "reference": "Adult Attachment Scale (AAS)",
-  "date": "18/02/2025, 07:25 pm",
-  "user_name": "Bharat Sundal",
-  "copyright": "This is MindPeers India Private Limited Copyright 2024. Please do not circulate or modify.",
+  "name": "How anxious am I?",
+  "code": "HOW-ANXIOUS-AM-I",
+  "reference": "Generalised Anxiety Disorder 7 Screener",
+  "date": "28/02/{{currentYear}}, 11:41 am",
+  "user_name": "harsh30",
+  "copyright": "This is MindPeers India Private Limited Copyright {{currentYear}}. Please do not circulate or modify.",
   "result": {
-    "score": 13,
-    "score_title": "Moderate levels of panic",
-    "label": "level of panic",
+    "score": 12,
+    "part_a_score": 14,
+    "part_b_score": 10,
+    "part_c_score": 8,
+    "score_title": "Moderate",
+    "label": "levels of anxiety",
     "score_stat": {
-      "type": "GAUGE_CHART",
+      "type": "BAR_CHART",
       "statData": [
         {
-          "value": 7,
+          "value": 50,
           "fill": "#1B9004"
         },
         {
-          "value": 21,
+          "value": 62,
           "fill": "#FFCC00"
         },
         {
-          "value": 28,
+          "value": 21,
           "fill": "#9A2D28"
+        }
+      ],
+      "labels": [
+        {
+          "text": "Low"
+        },
+        {
+          "text": "Moderate"
+        },
+        {
+          "text": "High"
         }
       ]
     }
@@ -35,13 +49,13 @@
         {
           "type": "TEXTUAL_CARD",
           "heading": "Is this something to worry about?",
-          "description": "Relationships for you might feel like walking on a swinging bridge: you long to cross and connect but hesitate, fearing the instability beneath your feet. Your high avoidant tendencies may push you to withdraw, your anxiety might pull you toward overthinking connections, and your secure tendencies create a hopeful foundation that relationships can work with effort. You’re navigating a mix of tension, growth, and stability.",
+          "description": null,
           "dynamic_description": {
-            "text": "Relationships for you might feel like walking on a swinging bridge: you long to cross and connect but hesitate, fearing the instability beneath your feet. Your high avoidant tendencies may push you to withdraw, your anxiety might pull you toward overthinking connections, and your secure tendencies create a hopeful foundation that relationships can work with effort. {{PARTA}} .",
+            "text": "This test indicates that you have {{PARTA}} . About 54% of respondents who took this test fall in the same bracket. We recommend reading ahead to understand how you can maintain these levels more efficiently.",
             "data": [
               {
                 "text": "{{PARTA}}",
-                "substitute": "You’re navigating a mix of tension, growth, and stability",
+                "substitute": "Moderate anxiety",
                 "type": "TEXT",
                 "color": "#1A8576"
               }
@@ -50,18 +64,18 @@
           "pointers": null,
           "header_color": "#7BB2FB",
           "icon": "https://cdn.mindpeers.co/dark-mode/tools/diagnostic-test/report/isthisomethingtoworryabout-icon.png",
-          "image": "https://cdn.mindpeers.co/dark-mode/tools/diagnostic-test/report/is-this-something-to-worry-about.png",
+          "image": "https://cdn.mindpeers.co/dark-mode/tools/diagnostic-test/report/is-this-something-to-worry-about-web.png",
           "isLocked": false
         },
         {
           "type": "TEXTUAL_CARD",
           "heading": "What does it mean?",
           "dynamic_description": {
-            "text": "Think of relationships like a dance. Some people flow effortlessly with their partner, sensing when to move closer and when to step back. Attachment is the emotional bond that forms our foundation for connecting with others. Attachment reflects {{PARTA}} . This score means you have conflicting feelings but also resilience in relationships. There’s no need to worry; awareness is the first step to growth Attachment is the way we have learned to give and receive love, shaped by past experiences.",
+            "text": "Our mind works ahead of us to protect us. So sometimes we fear what's going to happen in the future and we feel anxious. Your report suggests that you might be experiencing moderate to high levels of anxiety. The frequency of its occurance can affect different areas of your circle including {{PARTA}} . While anxiety is your protective response, it is important to learn how to regulate it. Be assured that you can learn tools that help you manage this.",
             "data": [
               {
                 "text": "{{PARTA}}",
-                "substitute": "how you seek love and connection",
+                "substitute": "work, relationships and the overall quality of life",
                 "type": "TEXT",
                 "color": "#1A8576"
               }
@@ -69,7 +83,7 @@
           },
           "header_color": "#7BB2FB",
           "icon": "https://cdn.mindpeers.co/dark-mode/tools/diagnostic-test/report/isthisomethingtoworryabout-icon.png",
-          "image": "https://cdn.mindpeers.co/dark-mode/tools/diagnostic-test/report/what-does-it-mean.png"
+          "image": "https://cdn.mindpeers.co/dark-mode/tools/diagnostic-test/report/what-does-it-mean-web.png"
         }
       ]
     },
@@ -81,12 +95,12 @@
           "heading": "Can you tell me where this is coming from?",
           "description": null,
           "pointers": [
-            "Abandonment",
-            "Romantic relationships",
-            "Closeness"
+            "Temperament stability",
+            "Uncontrolled worry",
+            "Lack of self control"
           ],
           "header_color": "#FEE0AD",
-          "icon": "https://cdn.mindpeers.co/dark-mode/tools/diagnostic-test/report/canyoutellmewherethisiscomingfrom.png",
+          "icon": "https://cdn.mindpeers.co/dark-mode/tools/diagnostic-test/report/search-icon.svg",
           "image": "https://cdn.mindpeers.co/dark-mode/tools/diagnostic-test/report/can-you-tell-report.png",
           "isLocked": false
         }
@@ -99,9 +113,9 @@
           "type": "TEXTUAL_WRAPPED_POINTER_CARD",
           "heading": "Make a conscious effort to reduce this to improve your resilience",
           "pointers": [
-            "Dependency",
-            "Romantic relationships",
-            "Closeness"
+            "Difficulty in relaxing",
+            "What if thoughts",
+            "Constant future anxiety"
           ],
           "header_color": "#C9B4F2",
           "icon": "https://cdn.mindpeers.co/dark-mode/tools/diagnostic-test/report/makeaconscousefforttoreducethistoimproveyourresilience-icon.png",
@@ -115,8 +129,8 @@
         {
           "type": "BORDERED_CARD_WITH_LEFT_IMAGE",
           "heading": "Our expert psychologist wants you to know",
-          "description": "\"You’re carrying a mix of trust, fear, and hope—and that’s okay. Recognizing these patterns gives you the power to shift them. Lean into your secure tendencies; they’re a strong foundation to build fulfilling relationships. Growth takes patience, and you’re already on the right path.\"",
-          "image": "https://cdn.mindpeers.co/dark-mode/tools/diagnostic-test/report/our-expert-psychologist-report.png"
+          "description": "\"You display an immense capacity to manage some of the big stressors. In your current state of mind, you could experience mood swings, also possible reactionary responses that may not be planned or intentioned.\"",
+          "image": "https://cdn.mindpeers.co/dark-mode/tools/diagnostic-test/report/our-expert-psychologist-report-web.png"
         }
       ]
     },
@@ -128,12 +142,11 @@
           "heading": "Within this score range, you can notice the following behaviors",
           "description": "While it differs from people to people, some common things to lookout for",
           "pointers": [
-            "Within this score range, you can notice the following behaviors,",
-            "Fluctuating between closeness and withdrawal in relationships.",
-            "Overanalyzing interactions, leading to mental fatigue.",
-            "Feeling emotionally overwhelmed yet craving emotional safety.",
-            "Experiencing tension headaches or tightness in your chest during relational stress.",
-            "Difficulty trusting, even when trust is earned."
+            "A mix of cautious with adventure",
+            "A blend of outgoingness and occasional introversion",
+            "Migraines",
+            "Minor viral infections",
+            "Stress eating"
           ]
         }
       ]
@@ -150,15 +163,14 @@
           "description": "Healthy relationships play a pivotal role in life. Here's a few things you can say to those close to you:",
           "info": "There are ways you can receive support from your closed ones:",
           "icon": "https://cdn.mindpeers.co/dark-mode/tools/diagnostic-test/report/recommendationpin-icon.png",
-          "image": "https://cdn.mindpeers.co/dark-mode/tools/diagnostic-test/report/relationship-support.png",
+          "image": "https://cdn.mindpeers.co/dark-mode/tools/diagnostic-test/report/relationship-support-web.png",
           "pointers": [
-            "Healthy relationships are pivotal for life. To those close to you, you could share a message on the lines of:",
-            "Your support means the world to me, even when I struggle to say it. Here’s how you can help me feel more secure:",
-            "Be patient with me when I pull back or overthink.",
-            "Offer gentle reassurance without pressure.",
-            "Remind me of the safety in our connection through small, consistent actions.",
-            "Allow me to process emotions at my own pace without feeling rushed.",
-            "Be transparent about your feelings—it helps me trust more."
+            "Practice square breathing before a big communication",
+            "Ask HALT: Are you hungry, angry, lonely or tired?",
+            "Begin highly emotional statements with: I feel",
+            "Take water breaks during confrontational discussions",
+            "Give a heads up when you are stressed, tired or emotional",
+            "When sharing, first decide if you want ‘Comfort or Solution?’"
           ],
           "type": "TEXTUAL_POINTER_CARD_WITH_BACKGROUND"
         },
@@ -168,15 +180,13 @@
           "description": "Share this at your workplace to help navigate relationships.",
           "info": "Take a moment to go through and share with your team members and if necessary, with supervisors:",
           "icon": "https://cdn.mindpeers.co/dark-mode/tools/diagnostic-test/report/recommendationpin-icon.png",
-          "image": "https://cdn.mindpeers.co/dark-mode/tools/diagnostic-test/report/work-support.png",
+          "image": "https://cdn.mindpeers.co/dark-mode/tools/diagnostic-test/report/work-support-web.png",
           "pointers": [
-            "Share this at your workplace to help navigate relationships at work easier.",
-            "I work best in environments that feel predictable and supportive. Here’s how you can help me thrive:",
-            "Provide clear communication about expectations.",
-            "Create opportunities for teamwork without forcing collaboration.",
-            "Encourage regular check-ins to discuss challenges or progress.",
-            "Avoid sudden changes without preparation—they can feel destabilizing.",
-            "Recognize effort, even in small ways, to foster a sense of belonging."
+            "At a given point, focus on 2 major projects and 3 medium tasks",
+            "10- 10- 10 rule: Every 10 mins look at something 10 feel away for 10 secs",
+            "Schedule a mental health break every 1.5- 2 months",
+            "Plan check in meetings with manager, HR and in house therapists",
+            "Organise work with schedules, priority planners to reduce frenzy with last minute tasks"
           ],
           "type": "TEXTUAL_POINTER_CARD_WITH_BACKGROUND"
         }
@@ -187,26 +197,26 @@
       }
     },
     {
-      "type": "PARALLEL_CARDS_SECTION",
+      "type": "FLEX_SECTION",
       "cards": [
         {
-          "type": "HALF_WIDTH_CARD",
+          "type": "SMALL_CARD",
           "heading": "Love Books? Start here",
           "icon": "https://cdn.mindpeers.co/dark-mode/tools/diagnostic-test/report/book-recommendation-icon.png",
-          "description": "Wired for Love",
-          "image": "https://cdn.mindpeers.co/dark-mode/tools/diagnostic-test/books/wired-for-love.png",
+          "description": "The Anatomy of Anxiety",
+          "image": "https://cdn.mindpeers.co/dark-mode/tools/diagnostic-test/books/gad-book.png",
           "cta": {
-            "text": "Stan Tatkin"
+            "text": "by Dr. Ellen Vora"
           }
         },
         {
-          "type": "HALF_WIDTH_CARD",
+          "type": "SMALL_CARD",
           "heading": "Not a Bookworm? Try This Movie Instead",
           "icon": "https://cdn.mindpeers.co/dark-mode/tools/diagnostic-test/report/movie-recommendation-icon.png",
-          "description": "Good Will Hunting",
-          "image": "https://cdn.mindpeers.co/dark-mode/tools/diagnostic-test/movies/good-will-hunting.png",
+          "description": "Little Miss Sunshine",
+          "image": "https://cdn.mindpeers.co/dark-mode/tools/diagnostic-test/movies/gad-movie.png",
           "cta": {
-            "text": "Gus Van Sant"
+            "text": "by Jonathan Dayton and Valerie Faris"
           }
         }
       ],
@@ -214,40 +224,38 @@
       "description": "Based on your score, here's how you can dive deeper into understanding and improving your emotional well-being:"
     },
     {
-      "type": "SMALL_CARD_CONTAINER_SECTION",
+      "type": "FLEX_SECTION",
       "heading": "What next?",
       "description": null,
       "cards": [
         {
           "type": "TEXTUAL_CARD_WITH_BACKGROUND_IMAGE",
           "heading": "Small Hack",
-          "description": "Small hack: When overwhelmed, pause to name your feelings out loud: “I feel anxious about this task” or “I’m withdrawing because I’m uncertain.” Labeling emotions helps reduce their intensity and brings clarity.",
+          "description": "Small hack: We're not going to ask you to stop overthinking. But can we scheudle it? Schedule an overthinking hour in your day and when worries come up during the day, remind yourself that you'll sit with that thought in your hour.",
           "image": "https://cdn.mindpeers.co/dark-mode/tools/diagnostic-test/report/small-hack.png"
         },
         {
           "type": "TEXTUAL_CARD_WITH_BACKGROUND_IMAGE",
           "heading": "Therapists",
           "dynamic_description": {
-            "text": "You can share this report with our expert psychologists {{THERAPIST_1}} and {{THERAPIST_2}} who specialise in working with your concerns.",
+            "text": "You can share this report with our expert psychologists {{THERAPIST_0}} and {{THERAPIST_1}} who specialise in working with your concerns.",
             "data": [
+              {
+                "text": "{{THERAPIST_0}}",
+                "substitute": "Riya Superstar",
+                "color": "#16A9B1",
+                "deeplink": {
+                  "screen": "BROSWER",
+                  "paramOne": "https://app.mindpeers.co?redirect=therapy/meet-our-experts/profile/riya-superstar"
+                }
+              },
               {
                 "text": "{{THERAPIST_1}}",
                 "substitute": "tanish Saxena",
                 "color": "#16A9B1",
-                "url": "https://google.com",
                 "deeplink": {
-                  "screen": "THERAPY_PROFILE",
-                  "paramOne": "tanish-saxena-0001"
-                }
-              },
-              {
-                "text": "{{THERAPIST_2}}",
-                "substitute": "Maria Jane (Indonesia)",
-                "color": "#16A9B1",
-                "url": "https://google.com",
-                "deeplink": {
-                  "screen": "THERAPY_PROFILE",
-                  "paramOne": "maria-jane-0001"
+                  "screen": "BROSWER",
+                  "paramOne": "https://app.mindpeers.co?redirect=therapy/meet-our-experts/profile/tanish-saxena-0001"
                 }
               }
             ]
@@ -259,40 +267,53 @@
     {
       "type": "FOOTER_SECTION",
       "heading": "Closing Note",
-      "description": "You are a blend of strength and sensitivity, and that’s a beautiful thing. Relationships aren’t about being perfect—they’re about growing together. Self-compassion is a concept that invites you to treat yourself as you would a close friend: with kindness, patience, and understanding. You deserve that care.\n\nWith love,\nMindPeers",
+      "description": "Think of anxiety like a fire alarm. You want it to go off when there's a fire but not when you're baking cookies. Let's work with it and learn how to regulate.\n\nWith love,\nMindPeers",
       "icon": "https://cdn.mindpeers.co/dark-mode/tools/diagnostic-test/report/closingnote.png",
       "image": "https://cdn.mindpeers.co/site-icons/mp_logo.png",
       "cards": [
         {
           "type": "GRID_CARD",
+          "image": "https://cdn.mindpeers.co/dark-mode/tools/diagnostic-test/report/availmoretest-QR.png",
+          "heading": null,
           "dynamic_description": {
             "text": "{{LINK}}",
             "data": [
               {
                 "text": "{{LINK}}",
                 "substitute": "Explore Tests",
-                "url": "https://google.com"
+                "color": "#16A9B1",
+                "deeplink": {
+                  "screen": "BROWSER",
+                  "paramOne": "https://app.mindpeers.co?redirect=assess"
+                }
               }
             ]
           }
         },
         {
           "type": "GRID_CARD",
+          "image": "https://cdn.mindpeers.co/dark-mode/tools/diagnostic-test/report/reachtoourtherapist-QR.png",
+          "heading": null,
           "dynamic_description": {
             "text": "{{LINK}}",
             "data": [
               {
                 "text": "{{LINK}}",
-                "substitute": "Explore Tests",
-                "url": "https://google.com"
+                "substitute": "Explore Therapists",
+                "color": "#16A9B1",
+                "deeplink": {
+                  "screen": "BROWSER",
+                  "paramOne": "https://app.mindpeers.co?redirect=therapy"
+                }
               }
             ]
           }
         }
       ],
       "footer": {
-        "heading": "This is MindPeers India Private Limited Copyright 2024. Please do not circulate or modify."
+        "heading": "This is MindPeers India Private Limited Copyright {{currentYear}}. Please do not circulate or modify."
       }
     }
-  ]
+  ],
+  "logoUrl": "https://cdn.mindpeers.co/website-images/mp-logo.png"
 }

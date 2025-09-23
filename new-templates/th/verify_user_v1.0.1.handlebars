@@ -1,0 +1,498 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+
+<head>
+  <title>
+  </title>
+  <!--[if !mso]><!-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!--<![endif]-->
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style type="text/css">
+    #outlook a {
+      padding: 0;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+      background-blend-mode: darken;
+    }
+
+    table,
+    td {
+      border-collapse: collapse;
+      mso-table-lspace: 0pt;
+      mso-table-rspace: 0pt;
+    }
+
+    img {
+      border: 0;
+      height: auto;
+      line-height: 100%;
+      outline: none;
+      text-decoration: none;
+      -ms-interpolation-mode: bicubic;
+    }
+
+    p {
+      display: block;
+      margin: 13px 0;
+    }
+
+    .otp-box-container {
+        background: linear-gradient(135.64deg, #16A9B1 -1.15%, #54D65F 100%),
+            linear-gradient(0deg, #323232, #323232);
+        padding: 2px;
+        border-radius: 1rem;
+        min-width: 8rem;
+    }
+    .otp-box {
+        border-image-slice: 1;
+        border-radius: 1rem;
+        padding: 0.75rem 1rem;
+        background: #252525;
+    }
+    .copy-btn{
+        background-color: transparent;
+        border: none;
+        display: flex;
+        gap: 0.5rem;
+        box-shadow: none;
+        align-items: center;
+        cursor: pointer;
+    }
+  </style>
+  <!--[if mso]>
+        <noscript>
+        <xml>
+        <o:OfficeDocumentSettings>
+          <o:AllowPNG/>
+          <o:PixelsPerInch>96</o:PixelsPerInch>
+        </o:OfficeDocumentSettings>
+        </xml>
+        </noscript>
+        <![endif]-->
+  <!--[if lte mso 11]>
+        <style type="text/css">
+          .mj-outlook-group-fix { width:100% !important; }
+        </style>
+        <![endif]-->
+  <!--[if !mso]><!-->
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700" rel="stylesheet" type="text/css">
+  <style type="text/css">
+    @import url(https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700);
+  </style>
+  <!--<![endif]-->
+  <style type="text/css">
+    @media only screen and (min-width:480px) {
+      .mj-column-per-100 {
+        width: 100% !important;
+        max-width: 100%;
+      }
+    }
+  </style>
+  <style media="screen and (min-width:480px)">
+    .moz-text-html .mj-column-per-100 {
+      width: 100% !important;
+      max-width: 100%;
+    }
+  </style>
+  <style type="text/css">
+    @media only screen and (max-width:480px) {
+      table.mj-full-width-mobile {
+        width: 100% !important;
+      }
+
+      td.mj-full-width-mobile {
+        width: auto !important;
+      }
+    }
+  </style>
+</head>
+
+<body style="word-spacing:normal;">
+   <table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td bgcolor="#252525" style="padding:30px;">
+  <div style="">
+    <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="" style="width:600px;" width="600" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+    <div style="margin:0px auto;max-width:600px;">
+      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;">
+        <tbody>
+          <tr>
+            <td style="direction:ltr;font-size:0px;padding:20px 0;text-align:center;">
+              <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:600px;" ><![endif]-->
+              <div class="mj-column-per-100 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+                <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
+                  <tbody>
+                    <tr>
+                      <td align="center" style="font-size:0px;padding:40px;word-break:break-word;">
+                        <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;">
+                          <tbody>
+                            <tr>
+                              <td style="width:200px;">
+                                <img height="auto" src="{{constants.logoUrl}}" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="200" />
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td align="center" style="padding:10px 25px;word-break:break-word;">
+                        <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <div class="otp-box-container" >
+                                      <h3 id="otpContainer" class="otp-box" style="min-width:7rem;text-align:center;font-family:Helvetica;font-size:16px;line-height:20px;color:#d2cec5;margin:0;">
+                                          {{ otp }}
+                                      </h3>
+                                  </div>   
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        <div style="font-family:Helvetica;font-size:16px;line-height:20px;text-align:left;color:#d2cec5;">
+                          <h2 style="margin-top:2rem; text-align:center;">รหัสยืนยัน</h2>
+                          <p style="text-align: center;font-size:18px;line-height:20px;margin-bottom:1.5rem;">สวัสดี {{name}} โปรดป้อนรหัสยืนยันข้างต้นเพื่อเข้าสู่ระบบ</p>
+                        </div>
+                      </td>
+                    </tr>
+                     <tr>
+                      <td align="center" style="font-size:0px;padding:10px 25px;word-break:break-word;">
+                        <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" ><tr><td><![endif]-->
+                        <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="float:none;display:inline-table;">
+                          <tr>
+                            <td style="padding:4px;vertical-align:middle;">
+                              <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#3f729b;border-radius:3px;width:30px;">
+                                <tr>
+                                  <td style="font-size:0;height:30px;vertical-align:middle;width:30px;">
+                                    <a href="{{constants.store.android.url}}" target="_blank">
+                                      <img height="30" src="{{constants.store.android.image}}" style="border-radius:3px;display:block;" width="30" />
+                                    </a>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                        <!--[if mso | IE]></td><td><![endif]-->
+                        <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="float:none;display:inline-table;">
+                          <tr>
+                            <td style="padding:4px;vertical-align:middle;">
+                              <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#3f729b;border-radius:3px;width:30px;">
+                                <tr>
+                                  <td style="font-size:0;height:30px;vertical-align:middle;width:30px;">
+                                    <a href="{{constants.store.ios.url}}" target="_blank">
+                                      <img height="30" src="{{constants.store.ios.image}}" style="border-radius:3px;display:block;" width="30" />
+                                    </a>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                        <!--[if mso | IE]></td><td><![endif]-->
+                        <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="float:none;display:inline-table;">
+                          <tr>
+                            <td style="padding:4px;vertical-align:middle;">
+                              <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#3f729b;border-radius:3px;width:30px;">
+                                <tr>
+                                  <td style="font-size:0;height:30px;vertical-align:middle;width:30px;">
+                                    <a href="{{constants.social.instagram.url}}" target="_blank">
+                                      <img height="30" src="{{constants.social.instagram.image}}" style="border-radius:3px;display:block;" width="30" />
+                                    </a>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                        <!--[if mso | IE]></td><td><![endif]-->
+                        <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="float:none;display:inline-table;">
+                          <tr>
+                            <td style="padding:4px;vertical-align:middle;">
+                              <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#0077b5;border-radius:3px;width:30px;">
+                                <tr>
+                                  <td style="font-size:0;height:30px;vertical-align:middle;width:30px;">
+                                    <a href="{{constants.social.linkedin.url}}" target="_blank">
+                                      <img height="30" src="{{constants.social.linkedin.image}}" style="border-radius:3px;display:block;" width="30" />
+                                    </a>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                        <!--[if mso | IE]></td><td><![endif]-->
+                        <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="float:none;display:inline-table;">
+                          <tr>
+                            <td style="padding:4px;vertical-align:middle;">
+                              <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#55acee;border-radius:3px;width:30px;">
+                                <tr>
+                                  <td style="font-size:0;height:30px;vertical-align:middle;width:30px;">
+                                    <a href="{{constants.social.twitter.url}}" target="_blank">
+                                      <img height="30" src="{{constants.social.twitter.image}}" style="border-radius:3px;display:block;" width="30" />
+                                    </a>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                        <!--[if mso | IE]></td><td><![endif]-->
+                        <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="float:none;display:inline-table;">
+                          <tr>
+                            <td style="padding:4px;vertical-align:middle;">
+                              <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#3b5998;border-radius:3px;width:30px;">
+                                <tr>
+                                  <td style="font-size:0;height:30px;vertical-align:middle;width:30px;">
+                                    <a href="{{constants.social.whatsapp.url}}" target="_blank">
+                                      <img height="30" src="{{constants.social.whatsapp.image}}" style="border-radius:3px;display:block;" width="30" />
+                                    </a>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                        <!--[if mso | IE]></td></tr></table><![endif]-->
+                      </td>
+                    </tr>
+                    <tr>
+                      <td align="center" style="font-size:0px;padding:10px 25px;word-break:break-word;">
+                        <div style="font-family:Helvetica;font-size:14px;line-height:18px;text-align:center;color:#d2cec5;max-width:20rem;">Mindpeers, Delhi Co, 125, Second Floor, Shahpur Jat, Siri Fort,New Delhi, Delhi 110049, India</div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!--[if mso | IE]></td></tr></table><![endif]-->
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <!--[if mso | IE]></td></tr></table><![endif]-->
+  </div>
+  </td>
+  </tr>
+</table>
+
+</body>
+
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>{{subject}}</title>
+    
+     
+    <style>
+        @font-face {
+            font-family: 'SF Pro Text';
+            font-style: normal;
+            font-weight: 300;
+            src: url('https://raw.githubusercontent.com/blaisck/sfwin/master/SFPro/TrueType/SFProText-Light.ttf');
+        }
+        @font-face {
+            font-family: 'SF Pro Text';
+            font-style: normal;
+            font-weight: 400;
+            src: url('https://raw.githubusercontent.com/blaisck/sfwin/master/SFPro/TrueType/SFProText-Regular.ttf');
+        }
+        @font-face {
+            font-family: 'SF Pro Text';
+            font-style: normal;
+            font-weight: 500;
+            src: url('https://raw.githubusercontent.com/blaisck/sfwin/master/SFPro/TrueType/SFProText-Medium.ttf');
+        }
+        @font-face {
+            font-family: 'SF Pro Text';
+            font-style: normal;
+            font-weight: 600;
+            src: url('https://raw.githubusercontent.com/blaisck/sfwin/master/SFPro/TrueType/SFProText-SemiBold.ttf');
+        }
+        @font-face {
+            font-family: 'SF Pro Text';
+            font-style: normal;
+            font-weight: 700;
+            src: url('https://raw.githubusercontent.com/blaisck/sfwin/master/SFPro/TrueType/SFProText-Bold.ttf');
+        }
+        @font-face {
+            font-family: 'SF Pro Text';
+            font-style: normal;
+            font-weight: 900;
+            src: url('https://raw.githubusercontent.com/blaisck/sfwin/master/SFPro/TrueType/SFProText-Heavy.ttf');
+        }
+
+        * {
+            color:#090A0B;
+        }
+        
+         
+        body, table, td, p, a, li, blockquote {
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+        }
+        table, td {
+            mso-table-lspace: 0pt;
+            mso-table-rspace: 0pt;
+        }
+        img {
+            -ms-interpolation-mode: bicubic;
+            border: 0;
+            height: auto;
+            line-height: 100%;
+            outline: none;
+            text-decoration: none;
+        }
+        
+         
+        .ReadMsgBody { width: 100%; }
+        .ExternalClass { width: 100%; }
+        .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {
+            line-height: 100%;
+        }
+        
+         
+        @media screen and (max-width: 600px) {
+            .mobile-padding {
+                padding-left: 20px !important;
+                padding-right: 20px !important;
+            }
+            .mobile-center {
+                text-align: center !important;
+            }
+            .mobile-full-width {
+                width: 100% !important;
+                max-width: 100% !important;
+            }
+            .mobile-hide {
+                display: none !important;
+            }
+            .social-icons {
+                text-align: center !important;
+            }
+        }
+    </style>
+</head>
+<body style="margin: 0; padding: 0; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; background-color: #f8f9fa;">
+    
+     
+    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="margin: 0; padding: 0;">
+        <tr>
+            <td align="center" style="padding: 0;">
+                
+                <!-- Main content table -->
+                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="600" class="mobile-full-width" style="max-width: 600px; width: 100%; background-color: #ffffff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); background: linear-gradient(199deg, #16A9B1 -30.61%, #FFFFFF 20.08%); ">
+                    
+                    <!-- Header with gradient -->
+                    <tr>
+                        <td style="padding: 60px 30px 0 30px; text-align: center;" class="mobile-padding">
+                            <!-- Logo area -->
+                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                <tr>
+                                    <td align="center" style="padding-bottom: 20px;">
+                                        <!-- Logo placeholder - replace with actual logo -->
+                                        <div style="display: inline-block; position: relative;">
+                                            <img height="auto" src="{{constants.smLogoUrl}}" style="border:0;display:block;outline:none;text-decoration:none;height:24px;width:auto;font-size:13px;object-fit:contai;" width="80" />
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <h1 style="margin: 0 0 12px 0; font-family: 'SF Pro Text', Arial, sans-serif; font-size: 14px; font-weight: 600; line-height: 1.3; text-align: center; color: #090A0BCC;">
+                              รหัสยืนยัน
+                            </h1>                 
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td style="padding: 0px; text-align: center;" class="mobile-padding">
+                          <div style="margin: 0 auto;width:fit-content;font-family: 'SF Pro Text', Arial, sans-serif; font-size: 16px; font-weight: 600; line-height: 1.3; text-align: center; color: #090A0BCC; border: 1px solid #3939391A; border-radius: 8px; padding: 8px 12px;">
+                               {{otp}}
+                          </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td style="padding: 10px 30px 0 30px; text-align: center;" class="mobile-padding">
+                          <h1 style="margin: 0 0 6px 0; font-family: 'SF Pro Text', Arial, sans-serif; font-size: 12px; font-weight: 400; line-height: 1.3; text-align: center; color: #090A0BCC;">
+                              สวัสดี {{name}} 
+                          </h1>
+                          
+                          <p style="margin: 0; font-family: 'SF Pro Text', Arial, sans-serif; font-size: 12px; font-weight: 400; line-height: 1.5;text-align: center;color: #090A0BCC; margin-bottom: 40px;">
+                            โปรดป้อนรหัสยืนยันข้างต้นเพื่อเข้าสู่ระบบ
+                          </p>
+                        </td> 
+                    </tr>
+
+                    <tr>
+                        <td style="background-color: #fff; padding: 40px 30px 0 30px; border-top: 1px solid #3939391A; " class="mobile-padding">
+                            
+                            <!-- Social icons -->
+                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                <tr>
+                                    <td align="center" class="social-icons">
+                                        {{#if socialLinks}}
+                                            {{#each socialLinks}}
+                                            <a href="{{url}}" style="display: inline-block; margin: 0 8px;">
+                                                <img src="{{icon}}" alt="{{platform}}" width="32" height="32" style="display: block;">
+                                            </a>
+                                            {{/each}}
+                                        {{else}}
+                                        <!-- Default social icons placeholders -->
+                                        <a href="{{constants.store.android.url}}" target="_blank" style="display: inline-block; margin: 0 8px;">
+                                            <img height="30" src="{{constants.store.android.image}}" style="border-radius:3px;display:block;object-fit:contain;" width="32" height="32" style="display: block;" />
+                                        </a>
+                                        <a href="{{constants.store.ios.url}}" target="_blank" style="display: inline-block; margin: 0 8px;">
+                                            <img height="30" src="{{constants.store.ios.image}}" style="border-radius:3px;display:block;object-fit:contain;" width="32" height="32" style="display: block;" />
+                                        </a>
+                                        <a href="{{constants.social.instagram.url}}" target="_blank" style="display: inline-block; margin: 0 8px;">
+                                            <img height="30" src="{{constants.social.instagram.image}}" style="border-radius:3px;display:block;object-fit:contain;" width="32" height="32" style="display: block;" />
+                                        </a>
+                                        <a href="{{constants.social.linkedin.url}}" target="_blank" style="display: inline-block; margin: 0 8px;">
+                                            <img height="30" src="{{constants.social.linkedin.image}}" style="border-radius:3px;display:block;object-fit:contain;" width="32" height="32" style="display: block;" />
+                                        </a>
+                                        <a href="{{constants.social.twitter.url}}" target="_blank" style="display: inline-block; margin: 0 8px;">
+                                            <img height="30" src="{{constants.social.twitter.image}}" style="border-radius:3px;display:block;object-fit:contain;" width="32" height="32" style="display: block;" />
+                                        </a>
+                                        <a href="{{constants.social.whatsapp.url}}" target="_blank" style="display: inline-block; margin: 0 8px;">
+                                            <img height="30" src="{{constants.social.whatsapp.image}}" style="border-radius:3px;display:block;object-fit:contain;" width="32" height="32" style="display: block;" />
+                                        </a>
+                                        {{/if}}
+                                    </td>
+                                </tr>
+                            </table>
+                            <p style="margin: 20px 0 0 0; font-family: 'SF Pro Text', Arial, sans-serif; font-size: 12px; color: #090A0B99; text-align: center; line-height: 1.5;max-width:400px; margin: 10px auto;">
+                              หากมีข้อสงสัยใด ๆ โปรดติดต่อเราผ่านทาง WhatsApp ที่ +91-9810066307.
+                            </p>
+                            <p style="margin: 20px 0 0 0; font-family: 'SF Pro Text', Arial, sans-serif; font-size: 12px; color: #090A0B99; text-align: center; line-height: 1.5;max-width:400px; margin: 0 auto;">
+                              Mindpeers, Delhi Co, 125, Second Floor, Shahpur Jat, Siri Fort,New Delhi, Delhi 110049, India
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center">
+                            <img height="auto" src="{{constants.logoUrl}}" style="border:0;display:block;outline:none;text-decoration:none;height:34px;width:auto;font-size:13px;object-fit:contain; margin: 30px auto 40px" height="38" />
+                        </td>
+                    </tr>
+                </table>
+                
+            </td>
+        </tr>
+    </table>
+    
+</body>
+</html>

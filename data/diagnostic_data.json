@@ -1,234 +1,304 @@
 {
-  "name": "Life Vitality Scale",
-  "user_name": "Vinay singh",
-  "copyright": "This is MindPeers India Private Limited Copyright 2025. Please do not circulate or modify.",
-  "reference": "Fatigue Severity Scale (FSS) Satisfaction with Life Scale",
-  "date": "2024-03-05T06:32:35.596Z",
-  "logoUrl": "https://cdn.mindpeers.co/website-images/mp-logo.png",
-  "reportUrl": "https://mindpeers-assets-staging.s3.amazonaws.com/diagnostic_test/652862dcf8952c333997fb7e/1fc782f4-7d48-4a3c-969d-6a60c5238810.pdf",
-  "result": {
-       "score": 34,
-       "score_title": "Low Satisfaction & Low Fatigue",
-       "label": "levels of life satisfaction impacted by levels of fatigue"
-  },
-  "isLocked": false,
-  "report": [
-     {
-          "type": "GRAPH_SECTION",
-          "cards":[
-               {
-                    "type": "BAR",
-                    "description":"High Avoidant, High Anxious, High Secure",
-                    "data": [
-                         {
-                              "name":"Avoidant",
-                              "value": 24,
-                              "max_value": 30,
-                              "color":"#16A693"
-                         },
-                         {
-                              "name":"Anxious",
-                              "value": 24,
-                              "max_value": 30,
-                              "color":"#1A8576"
-                         },
-                         {
-                              "name":"Secure",
-                              "value": 24,
-                              "max_value": 30,
-                              "color":"#20898E"
-                         }
-                    ]
-               },
-               {
-                    "type": "METER",
-                    "title":"SRRS SCORE",
-                    "value": 100,
-                    "max_value": 100
-               }
-          ]
+     "name": "How anxious am I?",
+     "code": "HOW-ANXIOUS-AM-I",
+     "reference": "Generalised Anxiety Disorder 7 Screener",
+     "date": "28/02/{{currentYear}}, 11:41 am",
+     "user_name": "harsh30",
+     "copyright": "This is MindPeers India Private Limited Copyright {{currentYear}}. Please do not circulate or modify.",
+     "result": {
+       "score": 12,
+       "score_title": "Moderate",
+       "label": "levels of anxiety",
+       "score_stat": {
+         "type": "GAUGE_CHART",
+         "statData": [
+           {
+             "value": 9,
+             "fill": "#1B9004"
+           },
+           {
+             "value": 14,
+             "fill": "#FFCC00"
+           },
+           {
+             "value": 21,
+             "fill": "#9A2D28"
+           }
+         ]
+       }
      },
-     {
-          "type":"QUESTIONS_SECTION",
-          "cards":[
-               {
-                    "heading": "Is this something to worry about?",
-                    "description": {
-                         "data": [
-                         {
-                              "text": "{{PARTA}}",
-                              "substitute": "you've encountered major stressors recently, and your body and mind are working overtime to adjust",
-                              "type": "TEXT",
-                              "color": "#090A0B99",
-                              "highlight_color": "#16A693"
-                         }
-                    ],
-                    "text": "Right now, life might feel like you're juggling too many balls in the air—some are rubber and will bounce back, but others feel like glass — fragile and overwhelming. Your score suggests that {{PARTA}}. Stress, in itself, isn't bad—it's your system's way of responding to change. But prolonged, intense stress can take a toll, making it essential to slow down and regain control."
-                    },
-                    "image": "https://cdn.mindpeers.co/dark-mode/tools/diagnostic-test/report/doubt-person.svg"
-               },
-               {
-                    "heading": "What does it mean?",
-                    "description": {
-                         "data": [
-                         {
-                              "text": "{{PARTA}}",
-                              "substitute": "you've encountered major stressors recently, and your body and mind are working overtime to adjust",
-                              "type": "TEXT",
-                              "color": "#090A0B99",
-                              "highlight_color": "#16A693"
-                         }
-                    ],
-                    "text": "Right now, life might feel like you're juggling too many balls in the air—some are rubber and will bounce back, but others feel like glass — fragile and overwhelming. Your score suggests that {{PARTA}}. Stress, in itself, isn't bad—it's your system's way of responding to change. But prolonged, intense stress can take a toll, making it essential to slow down and regain control."
-                    },
-                    "image": "https://cdn.mindpeers.co/dark-mode/tools/diagnostic-test/report/think-person.svg"
-               }
-          ]
-     },
-     {
-          "type": "BG_IMAGE_SECTION",
-          "background": "https://cdn.mindpeers.co/dark-mode/tools/diagnostic-test/report/graph-bg.png",
-          "question" :"Can you tell me where this is coming from?",
-          "icon":"https://cdn.mindpeers.co/dark-mode/tools/diagnostic-test/report/search-icon.svg",
-          "answers": [
-               "Loss",
-               "Marital Changes",
-               "Career Changes"
-          ]
-       },
-     {
-          "type": "WIDE_SECTION",
-          "cards": [
-               {
-                    "type": "FILLED_WIDE_CARD",
-                    "heading": "Make a conscious effort to reduce this to improve your resilience",
-                    "tags": [
-                         "Housing",
-                         "Education",
-                         "Social Life"
-                    ]
-               }
-          ]
-     },
-     {
-          "type": "IMAGE_BOX_TEXT",
-          "cards": [
-               {
-                    "heading":"Our expert psychologist wants you to know",
-                    "description": "I see you, and I know how much you’re handling. It’s okay to feel stretched thin. You’re adjusting to a lot, and that takes energy. Right now, I want you to shift from ‘I have to get through this’ to ‘How can I support myself through this?’ Small, intentional changes can help you regain a sense of balance. Let’s make that our goal—one step at a time."
-               }
-          ]
-     },
-     {
-          "type": "BG_IMAGE_SECTION",
-          "background": "https://static.vecteezy.com/system/resources/previews/003/604/064/non_2x/surface-space-blank-white-color-background-with-black-grid-space-line-color-surfaces-cyber-technology-banners-covers-terrain-sci-fi-frames-and-related-background-vector.jpg",
-          "heading": "Stress often translates into daily life interference.",
-          "cards": [
-               "Irritability or emotional exhaustion : Small things might trigger frustration or a sense of helplessness.",
-               "Irritability or emotional exhaustion : Small things might trigger frustration or a sense of helplessness.",
-               "Irritability or emotional exhaustion : Small things might trigger frustration or a sense of helplessness.",
-               "Irritability or emotional exhaustion : Small things might trigger frustration or a sense of helplessness.",
-               "Irritability or emotional exhaustion : Small things might trigger frustration or a sense of helplessness."
-          ]
+     "isLocked": false,
+     "report": [
+       {
+         "type": "NORMAL_SECTION",
+         "cards": [
+           {
+             "type": "TEXTUAL_CARD",
+             "heading": "Is this something to worry about?",
+             "description": null,
+             "dynamic_description": {
+               "text": "This test indicates that you have {{PARTA}} . About 54% of respondents who took this test fall in the same bracket. We recommend reading ahead to understand how you can maintain these levels more efficiently.",
+               "data": [
+                 {
+                   "text": "{{PARTA}}",
+                   "substitute": "Moderate anxiety",
+                   "type": "TEXT",
+                   "color": "#1A8576"
+                 }
+               ]
+             },
+             "pointers": null,
+             "header_color": "#7BB2FB",
+             "icon": "https://cdn.mindpeers.co/dark-mode/tools/diagnostic-test/report/isthisomethingtoworryabout-icon.png",
+             "image": "https://cdn.mindpeers.co/dark-mode/tools/diagnostic-test/report/is-this-something-to-worry-about-web.png",
+             "isLocked": false
+           },
+           {
+             "type": "TEXTUAL_CARD",
+             "heading": "What does it mean?",
+             "dynamic_description": {
+               "text": "Our mind works ahead of us to protect us. So sometimes we fear what's going to happen in the future and we feel anxious. Your report suggests that you might be experiencing moderate to high levels of anxiety. The frequency of its occurance can affect different areas of your circle including {{PARTA}} . While anxiety is your protective response, it is important to learn how to regulate it. Be assured that you can learn tools that help you manage this.",
+               "data": [
+                 {
+                   "text": "{{PARTA}}",
+                   "substitute": "work, relationships and the overall quality of life",
+                   "type": "TEXT",
+                   "color": "#1A8576"
+                 }
+               ]
+             },
+             "header_color": "#7BB2FB",
+             "icon": "https://cdn.mindpeers.co/dark-mode/tools/diagnostic-test/report/isthisomethingtoworryabout-icon.png",
+             "image": "https://cdn.mindpeers.co/dark-mode/tools/diagnostic-test/report/what-does-it-mean-web.png"
+           }
+         ]
        },
        {
-          "type": "PARALLEL_CARDS_SECTION",
-          "heading": "What are the recommendations for your support system?",
-          "cards": [
-               {
-                    "header_color": "#16A693",
-                    "heading": "Relationship support that can help you thrive",
-                    "description": "Hey, I know you care about me, and I appreciate it more than I say. Right now, life feels overwhelming, and I may not always know how to ask for help. If you want to support me,",
-                    "image": "https://static.desygner.com/wp-content/uploads/sites/13/2022/05/04141642/Free-Stock-Photos-01.jpg",
-                    "pointers_title": "Here's what can help :",
-                    "pointers": [
-                         "Finding meaning in life will help to create the necessary movement, you can create this with the support of those around you ",
-                         " Setting up regular meetups with those close to you ",
-                         " Chart out your intimacy circles: Who are those close to you, now reach out to some of the even distant ones ",
-                         " Start working on a new skill: you'll quite likely meet a new group of people that you will find synergy with ",
-                         " Group meditation is effective as a stress buster as well as an activity you can do with closed ones"
-                    ],
-                    "type": "POINTER_CARD"
-               },
-               {
-                    "header_color": "#16A693",
-                    "heading": "Workplace accommodations that will help you thrive",
-                    "description": "Work stress is often one of the biggest stressors.",
-                    "image": "https://static.desygner.com/wp-content/uploads/sites/13/2022/05/04141642/Free-Stock-Photos-01.jpg",
-                    "pointers_title": "Here's what can help :",
-                    "pointers": [
-                         "Work with your manager to reduce spill over effect: effectively do not carry work into post work hours",
-                         "Ensure that your work is planned in such a way that it does not interfere with personal commitment and health habits such as eating a nutritionally rich meal  and exercise regime",
-                         "Team up with a colleague to learn a new skill or master a known skill",
-                         "Schedule meetings in such a way that they serve as nduges and reminders for work tasks"
-                    ],
-                    "type": "POINTER_CARD"
-               }
-          ]
-     },
-     {
-        "type": "PARALLEL_CARDS_SECTION",
-        "sub_heading": "Based on your score, here's how you can dive deeper into understanding and improving your emotional well-being:",
-        "cards": [
-             {
-                  "header_color": "#090A0B",
-                  "heading": "📚 Love Books? Start Here",
-                  "image": "https://static.desygner.com/wp-content/uploads/sites/13/2022/05/04141642/Free-Stock-Photos-01.jpg",
-                   "description": "Option B, by Sheryl Sandberg and Adam Grant",
-                  "type": "FILLED_CARD",
-                  "background": "#F5FBFA"
-             },
-             {
-                  "header_color": "#090A0B",
-                  "heading": "Workplace accommodations that will help you thrive",
-                  "image": "https://static.desygner.com/wp-content/uploads/sites/13/2022/05/04141642/Free-Stock-Photos-01.jpg",
-                  "description": "Brave",
-                  "type": "FILLED_CARD",
-                  "background": "#F5FBFA"
+         "type": "CROSS_SECTION",
+         "cards": [
+           {
+             "type": "THREE_POINTER_ARROW_CARD",
+             "heading": "Can you tell me where this is coming from?",
+             "description": null,
+             "pointers": [
+               "Temperament stability",
+               "Uncontrolled worry",
+               "Lack of self control"
+             ],
+             "header_color": "#FEE0AD",
+             "icon": "https://cdn.mindpeers.co/dark-mode/tools/diagnostic-test/report/search-icon.svg",
+             "image": "https://cdn.mindpeers.co/dark-mode/tools/diagnostic-test/report/can-you-tell-report.png",
+             "isLocked": false
+           }
+         ]
+       },
+       {
+         "type": "NORMAL_SECTION",
+         "cards": [
+           {
+             "type": "TEXTUAL_WRAPPED_POINTER_CARD",
+             "heading": "Make a conscious effort to reduce this to improve your resilience",
+             "pointers": [
+               "Difficulty in relaxing",
+               "What if thoughts",
+               "Constant future anxiety"
+             ],
+             "header_color": "#C9B4F2",
+             "icon": "https://cdn.mindpeers.co/dark-mode/tools/diagnostic-test/report/makeaconscousefforttoreducethistoimproveyourresilience-icon.png",
+             "isLocked": false
+           }
+         ]
+       },
+       {
+         "type": "NORMAL_SECTION",
+         "cards": [
+           {
+             "type": "BORDERED_CARD_WITH_LEFT_IMAGE",
+             "heading": "Our expert psychologist wants you to know",
+             "description": "\"You display an immense capacity to manage some of the big stressors. In your current state of mind, you could experience mood swings, also possible reactionary responses that may not be planned or intentioned.\"",
+             "image": "https://cdn.mindpeers.co/dark-mode/tools/diagnostic-test/report/our-expert-psychologist-report-web.png"
+           }
+         ]
+       },
+       {
+         "type": "NORMAL_SECTION",
+         "cards": [
+           {
+             "type": "GRAPH_CARD",
+             "heading": "Within this score range, you can notice the following behaviors",
+             "description": "While it differs from people to people, some common things to lookout for",
+             "pointers": [
+               "A mix of cautious with adventure",
+               "A blend of outgoingness and occasional introversion",
+               "Migraines",
+               "Minor viral infections",
+               "Stress eating"
+             ]
+           }
+         ]
+       },
+       {
+         "type": "FLEX_SECTION",
+         "heading": "What are recommendations for your support system?",
+         "image": "https://cdn.mindpeers.co/dark-mode/site-icons/mp_logo.png",
+         "icon": "https://cdn.mindpeers.co/dark-mode/tools/diagnostic-test/report/recommendaton-icon.png",
+         "cards": [
+           {
+             "header_color": "#16A693",
+             "heading": "Relationship support that can help you thrive",
+             "description": "Healthy relationships play a pivotal role in life. Here's a few things you can say to those close to you:",
+             "info": "There are ways you can receive support from your closed ones:",
+             "icon": "https://cdn.mindpeers.co/dark-mode/tools/diagnostic-test/report/recommendationpin-icon.png",
+             "image": "https://cdn.mindpeers.co/dark-mode/tools/diagnostic-test/report/relationship-support-web.png",
+             "pointers": [
+               "Practice square breathing before a big communication",
+               "Ask HALT: Are you hungry, angry, lonely or tired?",
+               "Begin highly emotional statements with: I feel",
+               "Take water breaks during confrontational discussions",
+               "Give a heads up when you are stressed, tired or emotional",
+               "When sharing, first decide if you want ‘Comfort or Solution?’"
+             ],
+             "type": "TEXTUAL_POINTER_CARD_WITH_BACKGROUND"
+           },
+           {
+             "header_color": "#16A693",
+             "heading": "Workplace accommodations that will help you thrive",
+             "description": "Share this at your workplace to help navigate relationships.",
+             "info": "Take a moment to go through and share with your team members and if necessary, with supervisors:",
+             "icon": "https://cdn.mindpeers.co/dark-mode/tools/diagnostic-test/report/recommendationpin-icon.png",
+             "image": "https://cdn.mindpeers.co/dark-mode/tools/diagnostic-test/report/work-support-web.png",
+             "pointers": [
+               "At a given point, focus on 2 major projects and 3 medium tasks",
+               "10- 10- 10 rule: Every 10 mins look at something 10 feel away for 10 secs",
+               "Schedule a mental health break every 1.5- 2 months",
+               "Plan check in meetings with manager, HR and in house therapists",
+               "Organise work with schedules, priority planners to reduce frenzy with last minute tasks"
+             ],
+             "type": "TEXTUAL_POINTER_CARD_WITH_BACKGROUND"
+           }
+         ],
+         "footer": {
+           "image": "https://cdn.mindpeers.co/dark-mode/tools/diagnostic-test/report/takescreenshot-con.png",
+           "heading": "Take a screenshot and share this with your partner/manager/family"
+         }
+       },
+       {
+         "type": "FLEX_SECTION",
+         "cards": [
+           {
+             "type": "SMALL_CARD",
+             "heading": "Love Books? Start here",
+             "icon": "https://cdn.mindpeers.co/dark-mode/tools/diagnostic-test/report/book-recommendation-icon.png",
+             "description": "The Anatomy of Anxiety",
+             "image": "https://cdn.mindpeers.co/dark-mode/tools/diagnostic-test/books/gad-book.png",
+             "cta": {
+               "text": "by Dr. Ellen Vora"
              }
-        ]
-   },
-   {
-      "type": "PARALLEL_CARDS_SECTION",
-      "heading": "What next?",
-      "cards": [
-           {
-                "header_color": "#090A0B",
-                "heading": "Small Hack",
-                "image": "https://cdn.mindpeers.co/dark-mode/tools/diagnostic-test/report/idea-icon.png",
-                 "description": "When stress spikes, use this trick:\n5 things you can see\n4 things you can touch\n3 things you can hear\n2 things you can smell\n1 thing you can taste\nThis brings your mind back to the present and out of the stress spiral",
-                "type": "BG_IMAGE_CARD"
            },
            {
-                "header_color": "#090A0B",
-                "heading": "Therapist",
-                "image": "https://cdn.mindpeers.co/dark-mode/tools/diagnostic-test/report/chat-icon.png",
-                "description": "You can share this report with our expert psychologists (Therpist name) and (Therpist name) who specialise in working with your concerns.",
-                "type": "BG_IMAGE_CARD"
+             "type": "SMALL_CARD",
+             "heading": "Not a Bookworm? Try This Movie Instead",
+             "icon": "https://cdn.mindpeers.co/dark-mode/tools/diagnostic-test/report/movie-recommendation-icon.png",
+             "description": "Little Miss Sunshine",
+             "image": "https://cdn.mindpeers.co/dark-mode/tools/diagnostic-test/movies/gad-movie.png",
+             "cta": {
+               "text": "by Jonathan Dayton and Valerie Faris"
+             }
            }
-      ]
- },
- {
-      "type": "FOOTER_SECTION",
-      "description": "You are not just surviving this—you are learning, adapting, and growing through it. Remember the ‘Tend-and-Befriend’ response—stress doesn’t always have to mean fight or flight. Sometimes, reaching out, nurturing connections, and allowing yourself to receive support is the most powerful way to regain balance.",
-      "icon": "https://cdn.mindpeers.co/tools/mantra/mantraLogoWOBg.svg",
-      "logo": "https://cdn.mindpeers.co/website-images/mp-logo.png",
-      "cards": [
+         ],
+         "heading": null,
+         "description": "Based on your score, here's how you can dive deeper into understanding and improving your emotional well-being:"
+       },
+       {
+         "type": "FLEX_SECTION",
+         "heading": "What next?",
+         "description": null,
+         "cards": [
            {
-                "image": "https://cdn.mindpeers.co/tools/mantra/mantraLogoWOBg.svg",
-                "heading": "Avail more tests",
-                "type": "GRID_CARD"
+             "type": "TEXTUAL_CARD_WITH_BACKGROUND_IMAGE",
+             "heading": "Small Hack",
+             "description": "Small hack: We're not going to ask you to stop overthinking. But can we scheudle it? Schedule an overthinking hour in your day and when worries come up during the day, remind yourself that you'll sit with that thought in your hour.",
+             "image": "https://cdn.mindpeers.co/dark-mode/tools/diagnostic-test/report/small-hack.png"
            },
            {
-                "image": "https://cdn.mindpeers.co/tools/mantra/mantraLogoWOBg.svg",
-                "heading": "Reach out to our therapists",
-                "type": "GRID_CARD"
+             "type": "TEXTUAL_CARD_WITH_BACKGROUND_IMAGE",
+             "heading": "Therapists",
+             "dynamic_description": {
+               "text": "You can share this report with our expert psychologists {{THERAPIST_0}} and {{THERAPIST_1}} who specialise in working with your concerns.",
+               "data": [
+                 {
+                   "text": "{{THERAPIST_0}}",
+                   "substitute": "Riya Superstar",
+                   "color": "#16A9B1",
+                   "deeplink": {
+                     "screen": "BROSWER",
+                     "paramOne": "https://app.mindpeers.co?redirect=therapy/meet-our-experts/profile/riya-superstar"
+                   }
+                 },
+                 {
+                   "text": "{{THERAPIST_1}}",
+                   "substitute": "tanish Saxena",
+                   "color": "#16A9B1",
+                   "deeplink": {
+                     "screen": "BROSWER",
+                     "paramOne": "https://app.mindpeers.co?redirect=therapy/meet-our-experts/profile/tanish-saxena-0001"
+                   }
+                 }
+               ]
+             },
+             "image": "https://cdn.mindpeers.co/dark-mode/tools/diagnostic-test/report/therapist.png"
            }
-      ],
-      "footer": {
-           "heading": "This is MindPeers India Private Limited Copyright 2024. Please do not circulate or modify."
-      }
- }
-
-  ]
-}
+         ]
+       },
+       {
+         "type": "FOOTER_SECTION",
+         "heading": "Closing Note",
+         "description": "Think of anxiety like a fire alarm. You want it to go off when there's a fire but not when you're baking cookies. Let's work with it and learn how to regulate.\n\nWith love,\nMindPeers",
+         "icon": "https://cdn.mindpeers.co/dark-mode/tools/diagnostic-test/report/closingnote.png",
+         "image": "https://cdn.mindpeers.co/site-icons/mp_logo.png",
+         "cards": [
+           {
+             "type": "GRID_CARD",
+             "image": "https://cdn.mindpeers.co/dark-mode/tools/diagnostic-test/report/availmoretest-QR.png",
+             "heading": null,
+             "dynamic_description": {
+               "text": "{{LINK}}",
+               "data": [
+                 {
+                   "text": "{{LINK}}",
+                   "substitute": "Explore Tests",
+                   "color": "#16A9B1",
+                   "deeplink": {
+                     "screen": "BROWSER",
+                     "paramOne": "https://app.mindpeers.co?redirect=assess"
+                   }
+                 }
+               ]
+             }
+           },
+           {
+             "type": "GRID_CARD",
+             "image": "https://cdn.mindpeers.co/dark-mode/tools/diagnostic-test/report/reachtoourtherapist-QR.png",
+             "heading": null,
+             "dynamic_description": {
+               "text": "{{LINK}}",
+               "data": [
+                 {
+                   "text": "{{LINK}}",
+                   "substitute": "Explore Therapists",
+                   "color": "#16A9B1",
+                   "deeplink": {
+                     "screen": "BROWSER",
+                     "paramOne": "https://app.mindpeers.co?redirect=therapy"
+                   }
+                 }
+               ]
+             }
+           }
+         ],
+         "footer": {
+           "heading": "This is MindPeers India Private Limited Copyright {{currentYear}}. Please do not circulate or modify."
+         }
+       }
+     ]
+   }

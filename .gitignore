@@ -2,3 +2,7 @@
 /output
 /package-lock.json
 /template.tar.gz 
+*.gz
+*.zip
+*.tar
+*.rar

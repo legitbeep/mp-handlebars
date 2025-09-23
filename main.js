@@ -4,23 +4,104 @@ const { generatePDF } = require("./pdf-convertor");
 const diagnosticData = require("./data/diagnostic_test.json");
 const signupData = require("./data/signup_user_data.json");
 
+const PAYMENT_OBJ = {
+  user: {
+    name: "User Harsh",
+    email: "harsh@mail.com",
+    contact: {
+      code: "+91",
+      mobile: "9876543210",
+      country_code: "IN",
+    },
+  },
+  invoice: {
+    id: "123456",
+    date: " 2023-10-10",
+  },
+  payments: {
+    cash: [
+      {
+        description: "Plan 1",
+        quantity: 1,
+        amount: 500,
+        currency: "Rs",
+        summary: {
+          total: {
+            coupon: 20,
+            grand: 600,
+          },
+          tax: 18,
+        },
+      },
+      {
+        description: "Plan 2",
+        quantity: 2,
+        amount: 500,
+        currency: "Rs",
+        summary: {
+          total: {
+            coupon: 40,
+            grand: 1100,
+          },
+          tax: 18,
+        },
+      },
+    ],
+  },
+};
+
+const JOURNAL_OBJ = {
+  bookings: [
+    { name: "Journal entry 1", date: "2023-10-10", time: "10:00 AM" },
+    { name: "Journal entry 2", date: "2023-10-10", time: "10:00 AM" },
+  ],
+};
+
+const AFFIRMATION_OBJ = {
+  affirmation_text: `“I am growing at my own pace, and that is enough. I trust myself, my journey, and the timing of my life.”`,
+  affirmation_author: "Jeff Bezos",
+};
+
 const templateData = {
   translated: {
-    path: "\\templates\\diagnostic_test_report.handlebars",
-    output: "\\output\\diagnostic_test_report.html",
-    outputPdf: "\\output\\diagnostic_test_report.pdf",
+    path: "\\new-templates\\first_therapy_reminder.handlebars",
+    output: "\\output\\new-templates\\verify_user.html",
+    outputPdf: "\\output\\new-tempaltes\\verify_user.pdf",
     data: {
-      // constants: {
-      //   logoUrl: "https://cdn.mindpeers.co/logos/mindpeers_default.png",
-      //   dashboardUrl: "https://dashboard.staging.mindpeers.co/zone",
-      //   test: {
-      //     name: "Test Name",
-      //     url: "https://dashboard.staging.mindpeers.co/zone",
-      //   },
-      //   ...signupData,
-      // },
-      // otp: 234543,
-      // name: "Harsh",
+      therapists: [
+        { name: "harsh", url: "https://dashboard.staging.mindpeers.co/zone" },
+        { name: "harsh2", url: "https://dashboard.staging.mindpeers.co/zone2" },
+      ],
+      orgLogoUrl: "../../assets/mp-sm-logo.png",
+      header: "https://cdn.mindpeers.co/logos/mindpeers_default.png",
+      constants: {
+        logoUrl: "https://cdn.mindpeers.co/logos/mindpeers_default.png",
+        dashboardUrl: "https://dashboard.staging.mindpeers.co/zone",
+        test: {
+          name: "Test Name",
+          url: "https://dashboard.staging.mindpeers.co/zone",
+        },
+        smLogoUrl: "../../assets/mp-sm-logo.png",
+        ...signupData,
+      },
+      otp: 234543,
+      name: "Harsh",
+      client: "Harsh",
+      normal_therapist_1: {
+        name: "Normal",
+      },
+      normal_therapist_2: {
+        name: "Normal2",
+      },
+      superstar_therapist_1: {
+        name: "Superstar",
+      },
+      superstar_therapist_2: {
+        name: "Superstar2",
+      },
+      ...AFFIRMATION_OBJ,
+      ...JOURNAL_OBJ,
+      ...PAYMENT_OBJ,
       ...diagnosticData,
     },
   },
@@ -45,7 +126,7 @@ const jsonData = templateData.translated.data;
       templatePath,
       jsonData
     );
-    await downloadPdf(renderedHtml);
+    // await downloadPdf(renderedHtml);
     await handlebarsRenderer.saveToHtmlFile(outputPath, renderedHtml);
     console.log("PDF and HTML files saved successfully.");
   } catch (error) {
