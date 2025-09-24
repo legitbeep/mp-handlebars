@@ -47,7 +47,7 @@
         }
 
         * {
-            color:#090A0B;
+            color:#090A0B !important;
         }
         
          
@@ -77,7 +77,7 @@
 
         strong,
         b {
-          color: #333;
+          color: #333 !important;
         }
 
         .table-heading{
@@ -128,7 +128,7 @@
             <td align="center" style="padding: 0;">
                 
                 <!-- Main content table -->
-                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="600" class="mobile-full-width" style="max-width:600px; width: 100%; background-color: #ffffff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); background: linear-gradient(
+                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="600" class="mobile-full-width" style="max-width:600px; width: 100%; background-color: #ffffff !important; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); background: linear-gradient(
 199deg, #16A9B1 -30.61%, #FFFFFF 20.08%); ">
                     
                     <!-- Header with gradient -->
@@ -160,17 +160,17 @@ font-size: 20px;
 leading-trim: NONE;
 line-height: 28px;
 letter-spacing: 2%;
-text-align: start; color: #090A0BCC;margin-bottom:20px;">
+text-align: start; color: #090A0BCC !important;margin-bottom:20px;">
                               Booking Confirmed
                             </h1> 
                             <!-- Main heading -->
-                            <h1 style="margin: 0 0 12px 0 ; font-family: 'SF Pro Text', Arial, sans-serif; font-size: 12px; font-weight: 400; line-height: 1.3; text-align: start; color: #090A0BCC;">
+                            <h1 style="margin: 0 0 12px 0 ; font-family: 'SF Pro Text', Arial, sans-serif; font-size: 12px; font-weight: 400; line-height: 1.3; text-align: start; color: #090A0BCC !important;">
                                 Hi {{name}},
                             </h1>
-                            <p style="margin: 0 0 12px 0 ; font-family: 'SF Pro Text', Arial, sans-serif; font-size: 12px; font-weight: 400; line-height: 1.3; text-align: start; color: #090A0BCC;">
+                            <p style="margin: 0 0 12px 0 ; font-family: 'SF Pro Text', Arial, sans-serif; font-size: 12px; font-weight: 400; line-height: 1.3; text-align: start; color: #090A0BCC !important;">
                               Thank you for booking a spot in our journal club. We’re so happy to see you become mentally stronger with these small acts of self-care that you’re engaging in.
                             </p>
-                            <p style="margin: 0 0 20px 0; font-family: 'SF Pro Text', Arial, sans-serif; font-size: 12px; font-weight: 400; line-height: 1.5;text-align: start;color: #090A0BCC;">
+                            <p style="margin: 0 0 20px 0; font-family: 'SF Pro Text', Arial, sans-serif; font-size: 12px; font-weight: 400; line-height: 1.5;text-align: start;color: #090A0BCC !important;">
                               Here are the details of the sessions you’ve booked:
                             </p>
                         </td>
@@ -179,15 +179,15 @@ text-align: start; color: #090A0BCC;margin-bottom:20px;">
                       <td align="center" style="font-size:0px;padding:0px 30px 20px 30px;word-break:break-word;">
                         <table cellpadding="0" cellspacing="0" width="100%" border="0" style="color:#fff;font-family: 'SF Pro Text', Arial, sans-serif;font-size:14px;line-height:20px;table-layout:auto;width:100%;border:1px solid #D7DAE0;font-weight: 600;border-radius:12px;overflow:hidden;">
                           <tr style="background: #FFF;">
-                            <th class='table-heading' style="color:#090A0B;padding:8px 12px;border-bottom:1px solid #D7DAE0;font-weight:500;">No.</th>
-                            <th class='table-heading' style="color:#090A0B;padding:8px 12px;border-bottom:1px solid #D7DAE0;font-weight:500;">Journal Club Theme</th>
-                            <th class='table-heading' style="color:#090A0B;padding:8px 12px;border-bottom:1px solid #D7DAE0;font-weight:500;">Date</th>
-                            <th class='table-heading' style="color:#090A0B;padding:8px 12px;border-bottom:1px solid #D7DAE0;font-weight:500;">Time</th>
+                            <th class='table-heading' style="color:#090A0B !important;padding:8px 12px;border-bottom:1px solid #D7DAE0;font-weight:500;">No.</th>
+                            <th class='table-heading' style="color:#090A0B !important;padding:8px 12px;border-bottom:1px solid #D7DAE0;font-weight:500;">Journal Club Theme</th>
+                            <th class='table-heading' style="color:#090A0B !important;padding:8px 12px;border-bottom:1px solid #D7DAE0;font-weight:500;">Date</th>
+                            <th class='table-heading' style="color:#090A0B !important;padding:8px 12px;border-bottom:1px solid #D7DAE0;font-weight:500;">Time</th>
                           </tr>
                           {{#each bookings}}
                             <tr align="center" style="background:#ffffff;transition:background-color 0.2s ease;">
                               <td class="table-text" style="padding:14px 20px;{{#unless @last}}border-bottom:1px solid #D7DAE0;{{/unless}}color:#5E6470;font-weight:500;">{{inc @index}}</td>
-                              <td class="table-text" style="padding:14px 20px;{{#unless @last}}border-bottom:1px solid #D7DAE0;{{/unless}}color:#090A0B;font-weight:500;">{{this.name}}</td>
+                              <td class="table-text" style="padding:14px 20px;{{#unless @last}}border-bottom:1px solid #D7DAE0;{{/unless}}color:#090A0B !important;font-weight:500;">{{this.name}}</td>
                               <td class="table-text" style="padding:14px 20px;{{#unless @last}}border-bottom:1px solid #D7DAE0;{{/unless}}color:#5E6470;font-weight:500;">{{this.date}}</td>
                               <td class="table-text" style="padding:14px 20px;{{#unless @last}}border-bottom:1px solid #D7DAE0;{{/unless}}color:#5E6470;font-weight:500;">{{this.time}}</td>
                             </tr>
@@ -205,7 +205,7 @@ leading-trim: NONE;
 line-height: 20px;
 letter-spacing: 1.4%;
 " >
-                          <p style="margin: 0 0 10px 0; font-family: 'SF Pro Text', Arial, sans-serif; text-align: start;color: #090A0B99;font-weight: 400;
+                          <p style="margin: 0 0 10px 0; font-family: 'SF Pro Text', Arial, sans-serif; text-align: start;color: #090A0B99 !important;font-weight: 400;
 font-style: Regular;
 font-size: 12px;
 leading-trim: NONE;
@@ -213,7 +213,7 @@ line-height: 20px;
 letter-spacing: 1.4%;">
                             Please note:
                           </p>
-                            <ol style="margin: 0; padding-left: 20px; font-family: 'SF Pro Text', Arial, sans-serif; color: #090A0B99;font-weight: 400;
+                            <ol style="margin: 0; padding-left: 20px; font-family: 'SF Pro Text', Arial, sans-serif; color: #090A0B99 !important;font-weight: 400;
 font-style: Regular;
 font-size: 12px;
 leading-trim: NONE;
@@ -222,10 +222,10 @@ letter-spacing: 1.4%;">
                                 <li style="color:#090A0B99;">These bookings are non-refundable and non-transferable.</li>
                                 <li style="margin-bottom: 8px;color:#090A0B99;">You can join these sessions via this <a href="{{constants.journalClubUrl}}" style="color:#0E45F999;font-weight:700;">link</a></li>
                             </ol>
-                            <p style="margin: 16 0 12px 0; font-family: 'SF Pro Text', Arial, sans-serif; font-size: 12px; font-weight: 400; line-height: 1.5;text-align: start;color: #090A0BCC;">
+                            <p style="margin: 16 0 12px 0; font-family: 'SF Pro Text', Arial, sans-serif; font-size: 12px; font-weight: 400; line-height: 1.5;text-align: start;color: #090A0BCC !important;">
                             PS: Do login and hop on the link on time, we don’t want you to miss out on the session’s end-to-end experience. :)
                             </p>
-                            <p style="margin: 0 0 10px 0; font-family: 'SF Pro Text', Arial, sans-serif; font-size: 12px; font-weight: 400; line-height: 1.5;text-align: start;color: #090A0BCC;">
+                            <p style="margin: 0 0 10px 0; font-family: 'SF Pro Text', Arial, sans-serif; font-size: 12px; font-weight: 400; line-height: 1.5;text-align: start;color: #090A0BCC !important;">
                               Wishing you great introspection and lots of strength, 
                             </p>
                         </td>
@@ -233,10 +233,10 @@ letter-spacing: 1.4%;">
                     <tr>
                         <td style="padding: 0px 30px 0 30px; text-align: center;" >
                             <div style="margin-top: 20px;">
-                                <p style="margin: 0; font-family: 'SF Pro Text', Arial, sans-serif; font-size: 12px; font-weight: 400; color: #333333;text-align:start;">
+                                <p style="margin: 0; font-family: 'SF Pro Text', Arial, sans-serif; font-size: 12px; font-weight: 400; color: #333333 !important;text-align:start;">
                                     Love,
                                 </p>
-                                <p style="margin: 5px 0 0 0; font-family: 'SF Pro Text', Arial, sans-serif; font-size: 12px; font-weight: 400; color: #333333;text-align:start;margin-bottom:40px;">
+                                <p style="margin: 5px 0 0 0; font-family: 'SF Pro Text', Arial, sans-serif; font-size: 12px; font-weight: 400; color: #333333 !important;text-align:start;margin-bottom:40px;">
                                     Team MindPeers
                                 </p>
                             </div>
@@ -281,10 +281,10 @@ letter-spacing: 1.4%;">
                     <tr>
                         <td align="center">
                             <!-- Company info -->
-                            <p style="margin: 20px 0 0 0; font-family: 'SF Pro Text', Arial, sans-serif; font-size: 12px; color: #090A0BCC; text-align: center; line-height: 1.5;max-width:400px; margin: 10px auto;">
+                            <p style="margin: 20px 0 0 0; font-family: 'SF Pro Text', Arial, sans-serif; font-size: 12px; color: #090A0BCC !important; text-align: center; line-height: 1.5;max-width:400px; margin: 10px auto;">
                                 For any queries, please reach out to us via WhatsApp message on +91-9810066307.
                             </p>
-                            <p style="font-family: 'SF Pro Text', Arial, sans-serif; font-size: 12px; color: #090A0BCC; text-align: center; line-height: 1.5;max-width:400px; margin: 0 auto; margin-bottom:20px;">
+                            <p style="font-family: 'SF Pro Text', Arial, sans-serif; font-size: 12px; color: #090A0BCC !important; text-align: center; line-height: 1.5;max-width:400px; margin: 0 auto; margin-bottom:20px;">
                                 Mindpeers, Delhi Co, 125, Second Floor, Shahpur Jat, Siri Fort,New Delhi, Delhi 110049, India
                             </p>
                         </td>
@@ -296,7 +296,7 @@ letter-spacing: 1.4%;">
                     </tr>
                     <tr>
                         <td align="center">
-                            <p style="margin: 20px 0 0 0; font-family: 'SF Pro Text', Arial, sans-serif; font-size: 12px; color: #090A0B99; text-align: center; line-height: 1.5;max-width:400px; margin: 10px auto 40px;">
+                            <p style="margin: 20px 0 0 0; font-family: 'SF Pro Text', Arial, sans-serif; font-size: 12px; color: #090A0B99 !important; text-align: center; line-height: 1.5;max-width:400px; margin: 10px auto 40px;">
                                 © {{currentYear}} All rights reserved by <a href='https://www.mindpeers.co/' target="_blank">MindPeers</a> | <a href="https://www.mindpeers.co/terms-and-condition" target="_blank">Terms & Conditions</a>    
                             </p>
                         </td>

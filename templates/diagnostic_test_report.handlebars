@@ -728,7 +728,7 @@
 }
 
 .score-value {
-  color: #090A0B;
+  color: #090A0B !important;
   font-weight: bold;
   position: absolute;
   top: 0;
@@ -790,20 +790,20 @@
     <div style="flex:0.75; border-radius: 1rem; overflow:hidden; padding:-2px;">
       <table class="basics-table">
         <tr style="">
-            <td style="color: #090A0B99; width:100px;" class="body-text3">Name</td>
-            <td style="color: #090A0B;" class="body-text3">{{user_name}}</td>
+            <td style="color: #090A0B99 !important; width:100px;" class="body-text3">Name</td>
+            <td style="color: #090A0B !important;" class="body-text3">{{user_name}}</td>
         </tr>
         <tr style="">
-            <td style="color: #090A0B99; width:100px;" class="body-text3">Test</td>
-            <td style="color: #090A0B;" class="body-text3">{{name}}</td>
+            <td style="color: #090A0B99 !important; width:100px;" class="body-text3">Test</td>
+            <td style="color: #090A0B !important;" class="body-text3">{{name}}</td>
         </tr>
         <tr style="">
-            <td style="color: #090A0B99; width:100px;" class="body-text3">Taken on</td>
-            <td style="color: #090A0B;" class="body-text3">{{date}}</td>
+            <td style="color: #090A0B99 !important; width:100px;" class="body-text3">Taken on</td>
+            <td style="color: #090A0B !important;" class="body-text3">{{date}}</td>
         </tr>
         <tr style="">
-            <td style="color: #090A0B99; width:100px;" class="body-text3">Reference</td>
-            <td style="color: #090A0B;" class="body-text3">{{reference}}</td>
+            <td style="color: #090A0B99 !important; width:100px;" class="body-text3">Reference</td>
+            <td style="color: #090A0B !important;" class="body-text3">{{reference}}</td>
         </tr>
     </table>
     </div>
@@ -1045,7 +1045,7 @@
                               <div style="position:relative;display:flex;align-items:center;flex-direction:column;height:130px;width:240px;padding:20px;">
                                 <img src="https://cdn.mindpeers.co/dark-mode/tools/diagnostic-test/report/question-bubble.png" style="position:absolute;inset:0;z-index:1;height: 200px;width: 400px;left: -50px;top: -20px;" />
                                 <img src="{{this.icon}}" alt="icon" style="height:2rem; width: auto;object-fit:contain;z-index:2;transform:rotate(-10deg);"  />
-                                <h2 class="subtitle-text2" style="color:#090A0B;z-index:2;text-align:center;">{{this.heading}}</h2>
+                                <h2 class="subtitle-text2" style="color:#090A0B !important;z-index:2;text-align:center;">{{this.heading}}</h2>
                               </div>
                               <div style="display:flex;width: 450px;justify-content:space-between;margin-top:-2rem;">
                                 {{#each this.pointers}}
@@ -1075,7 +1075,7 @@
                   {{#switch this.type}}
                     {{#case "TEXTUAL_CARD_WITH_BACKGROUND_IMAGE"}}
                       <div class="item-box" style="flex:0.5; padding:1rem; display:flex; flex-direction:column; gap:0.8rem;;position:relative">
-                              <h1 class="subtitle-text1" style="color:#090A0B;margin-bottom:0.5rem;z-index:1;">{{this.heading}}</h1>                            
+                              <h1 class="subtitle-text1" style="color:#090A0B !important;margin-bottom:0.5rem;z-index:1;">{{this.heading}}</h1>                            
                           {{#ifType this.image "string"}}
                             <img src={{this.image}} style="width:100%; max-width:15rem; height:auto; max-height:90%;object-fit:contain; margin:0 auto;position:absolute;right:0;bottom:0;z-index:0;" alt="" />
                           {{/ifType}}
@@ -1118,15 +1118,15 @@
                             {{#ifType this.header_color "string"}}
                             <h1 class="subtitle-text2" style="color:{{this.header_color}};margin-bottom:0.5rem;">{{this.heading}}</h1>
                             {{/ifType}}
-                            <span class="body-text3" style="color:#090A0BCC;">{{this.description}}</span>
+                            <span class="body-text3" style="color:#090A0BCC !important;">{{this.description}}</span>
                           </div>
                         {{#ifType this.image "string"}}
                           <img src={{this.image}} style="width:100%; max-width:15rem; height:auto; margin:0 auto;" alt="" />
                         {{/ifType}}
-                        <span class="body-text3" style="color:#090A0BCC;margin: 1rem 0;">{{this.info}}</span>
-                        <ul  class="body-text3" style="color:#090A0BCC;display:flex; flex-direction:column; gap:0.5rem;padding:0;margin-top:0;">
+                        <span class="body-text3" style="color:#090A0BCC !important;margin: 1rem 0;">{{this.info}}</span>
+                        <ul  class="body-text3" style="color:#090A0BCC !important;display:flex; flex-direction:column; gap:0.5rem;padding:0;margin-top:0;">
                           {{#each this.pointers}}
-                            <li class="body-text3" style="color:#090A0B;list-style-type: none; display:flex; gap:0.5rem; ">
+                            <li class="body-text3" style="color:#090A0B !important;list-style-type: none; display:flex; gap:0.5rem; ">
                               <img src="https://cdn.mindpeers.co/dark-mode/tools/diagnostic-test/report/pin-icon.svg" style="height: 16px; width:auto;" alt="" />
                               <span>{{this}}</span>  
                             </li>
@@ -1140,7 +1140,7 @@
                             {{#ifType this.icon 'string'}}
                               <img style="height:24px; width:24px; object-fit:contain;" alt="" src="{{this.icon}}" />
                             {{/ifType}}
-                            <h1 class="subtitle-text2" style="color:#090A0B;margin-bottom:0.5rem;">
+                            <h1 class="subtitle-text2" style="color:#090A0B !important;margin-bottom:0.5rem;">
                               {{this.heading}}
                             </h1> 
                           </div>                           
@@ -1150,7 +1150,7 @@
                         {{/ifType}}
 
                         <div style="display:flex;flex-direction:column;align-items:flex-start;gap:8px;">
-                          <span class="subtitle-text2" style="color:#090A0BCC;">{{this.description}}</span>
+                          <span class="subtitle-text2" style="color:#090A0BCC !important;">{{this.description}}</span>
                         {{#ifType this.cta.text "string"}}
                           <span class="body-text2" style="color:#090A0B99;">{{this.cta.text}}</a>
                         {{/ifType}}
@@ -1185,7 +1185,7 @@
                       <div style="position:relative;display:flex;align-items:center;flex-direction:column;height:130px;width:240px;padding:20px;">
                         <img src="https://cdn.mindpeers.co/dark-mode/tools/diagnostic-test/report/question-bubble.png" style="position:absolute;inset:0;z-index:1;height: 200px;width: 400px;left: -50px;top: -20px;" />
                         <img src="{{this.icon}}" alt="icon" style="height:1.25rem; width: auto;object-fit:contain;z-index:2;transform:rotate(-10deg);"  />
-                        <h2 class="subtitle-text2" style="color:#090A0B;z-index:2;text-align:center;">{{this.question}}</h2>
+                        <h2 class="subtitle-text2" style="color:#090A0B !important;z-index:2;text-align:center;">{{this.question}}</h2>
                       </div>
                       <div style="display:flex;width: 600px;justify-content:space-between;margin-top:-2rem;">
                         {{#each this.answers}}
@@ -1237,16 +1237,16 @@
                         {{#ifType this.header_color "string"}}
                           <div style="display:flex;flex-direction:column;margin-bottom: 1rem;">
                             <h1 class="subtitle-text2" style="color:{{this.header_color}};margin-bottom:0.5rem;">{{this.heading}}</h1>
-                            <span class="body-text3" style="color:#090A0BCC;">{{this.description}}</span>
+                            <span class="body-text3" style="color:#090A0BCC !important;">{{this.description}}</span>
                           </div>
                         {{/ifType}}
                         {{#ifType this.image "string"}}
                           <img src={{this.image}} style="width:100%; max-width:15rem; height:auto; margin:0 auto;" alt="" />
                         {{/ifType}}
-                        <span class="body-text3" style="color:#090A0BCC;margin: 1rem 0;">{{this.pointers_title}}</span>
-                        <ul  class="body-text3" style="color:#090A0BCC;display:flex; flex-direction:column; gap:0.5rem;padding:0;margin-top:0;">
+                        <span class="body-text3" style="color:#090A0BCC !important;margin: 1rem 0;">{{this.pointers_title}}</span>
+                        <ul  class="body-text3" style="color:#090A0BCC !important;display:flex; flex-direction:column; gap:0.5rem;padding:0;margin-top:0;">
                           {{#each this.pointers}}
-                            <li class="body-text3" style="color:#090A0B;list-style-type: none; display:flex; gap:0.5rem; ">
+                            <li class="body-text3" style="color:#090A0B !important;list-style-type: none; display:flex; gap:0.5rem; ">
                               <img src="https://cdn.mindpeers.co/dark-mode/tools/diagnostic-test/report/pin-icon.png" style="height: 14px; width:auto;" alt="" />
                               <span>{{this}}</span>  
                             </li>
@@ -1260,7 +1260,7 @@
                             {{#ifType this.icon 'string'}}
                               <img style="height:24px; width:24px; object-fit:contain;" alt="" src="{{this.icon}}" />
                             {{/ifType}}
-                            <h1 class="subtitle-text2" style="color:#090A0B;margin-bottom:0.5rem;">
+                            <h1 class="subtitle-text2" style="color:#090A0B !important;margin-bottom:0.5rem;">
                               {{this.heading}}
                             </h1> 
                           </div>                           
@@ -1270,7 +1270,7 @@
                         {{/ifType}}
 
                         <div style="display:flex;flex-direction:column;align-items:flex-start;gap:8px;">
-                          <span class="subtitle-text2" style="color:#090A0BCC;">{{this.description}}</span>
+                          <span class="subtitle-text2" style="color:#090A0BCC !important;">{{this.description}}</span>
                         {{#ifType this.cta.text "string"}}
                           <span class="body-text2" style="color:#090A0B99;">{{this.cta.text}}</a>
                         {{/ifType}}
@@ -1293,7 +1293,7 @@
                   {{#switch this.type}}
                     {{#case "TEXTUAL_CARD_WITH_BACKGROUND_IMAGE"}}
                       <div class="item-box" style="flex:0.5; padding:1rem; display:flex; flex-direction:column; gap:0.8rem;;position:relative">
-                              <h1 class="subtitle-text1" style="color:#090A0B;margin-bottom:0.5rem;z-index:1;">{{this.heading}}</h1>                            
+                              <h1 class="subtitle-text1" style="color:#090A0B !important;margin-bottom:0.5rem;z-index:1;">{{this.heading}}</h1>                            
                           {{#ifType this.image "string"}}
                             <img src={{this.image}} style="width:100%; max-width:15rem; height:auto; max-height:90%;object-fit:contain; margin:0 auto;position:absolute;right:0;bottom:0;z-index:0;" alt="" />
                           {{/ifType}}

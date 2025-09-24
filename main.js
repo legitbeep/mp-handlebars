@@ -89,15 +89,19 @@ const templateData = {
       client: "Harsh",
       normal_therapist_1: {
         name: "Normal",
+        photo: "https://placehold.co/50x50",
       },
       normal_therapist_2: {
         name: "Normal2",
+        photo: "https://placehold.co/50x50",
       },
       superstar_therapist_1: {
         name: "Superstar",
+        photo: "https://placehold.co/50x50",
       },
       superstar_therapist_2: {
         name: "Superstar2",
+        photo: "https://placehold.co/50x50",
       },
       ...AFFIRMATION_OBJ,
       ...JOURNAL_OBJ,
