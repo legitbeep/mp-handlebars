@@ -64,7 +64,7 @@ const AFFIRMATION_OBJ = {
 
 const templateData = {
   translated: {
-    path: "\\new-templates\\es\\slot_reminder.handlebars",
+    path: "\\email-templates\\verify_user.handlebars",
     output: "\\output\\new-templates\\verify_user.html",
     outputPdf: "\\output\\new-tempaltes\\verify_user.pdf",
     data: {

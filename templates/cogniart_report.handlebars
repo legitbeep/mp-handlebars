@@ -5,6 +5,8 @@
   <title>
   </title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="color-scheme" content="light">
+    <meta name="supported-color-schemes" content="light">
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style type="text/css">
@@ -169,7 +171,7 @@
         .main-container{
             max-width: 872px;
             margin: 0 auto;
-            background-color: #FFF;
+            background:#fff;
             padding: 10px 14px;
             display: flex;
             flex-direction: column;
@@ -194,14 +196,61 @@
             width: 100%;
             border-top: 2px solid #FFFFFF;
         }
-    </style>
+u + .darkmode .gmail-blend-screen { background:#000; mix-blend-mode:screen; } 
+u + .darkmode .gmail-blend-difference { background:#000; mix-blend-mode:difference; }
+
+.darkmode p li span div td tr th { 
+    -webkit-text-fill-color: #090A0B !important;
+}
+@media (prefers-color-scheme: dark) {
+    body, table, td, p, a, li, blockquote, h1, h2, h3, h4, h5, h6, span, div {
+        color: #090A0B !important;
+        -webkit-text-fill-color: #090A0B !important;
+        background-color: transparent !important;
+    }
+}
+:root {
+    color-scheme: light only !important;
+}
+#outlook a {
+      padding: 0;
+    }
+/* iOS Mail and Gmail specific overrides */
+@supports (-webkit-touch-callout: none) {
+    * {
+        color: #090A0B !important;
+        -webkit-text-fill-color: #090A0B !important;
+    }
+}
+
+/* Gmail dark mode overrides */
+body[data-ogsc] *,
+body[data-ogsc] table,
+body[data-ogsc] td,
+body[data-ogsc] p,
+body[data-ogsc] span,
+body[data-ogsc] div,
+body[data-ogsc] h1,
+body[data-ogsc] h2 {
+    color: #090A0B !important;
+    -webkit-text-fill-color: #090A0B !important;
+}
+.gradient-bg{
+background: linear-gradient(199deg, #16A9B1 -30.61%, #FFFFFF 20.08% ) !important; 
+}
+@media (prefers-color-scheme: dark) {
+    .gradient-bg {
+        background: linear-gradient(199deg, #0f8a94 -30.61%, #2d2d2d 20.08%) !important;
+    }
+}
+</style>
   <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700" rel="stylesheet" type="text/css">
   <style type="text/css">
     @import url(https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700);
   </style>
 </head>
 
-<body style="word-spacing:normal;">
+<body class="darkmode" bgcolor="#f8f9fa" style="word-spacing:normal;">
   <header style="margin:0 auto; text-align:center; font-size: 0.75rem; margin: 0.5rem 0;">This is MindPeers India Private Limited Copyright {{currentYear}}. Please do not circulate or modify.</header>
   <div style="margin:10px auto;max-width:872px;display:flex; gap:1rem; justify-content: space-between;align-items:center;">
     <img src={{constants.logoUrl}} alt="logo" style="height: 1.5rem; width: auto; display: block;" />

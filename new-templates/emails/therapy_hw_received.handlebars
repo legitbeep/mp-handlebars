@@ -2,9 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+<meta name="color-scheme" content="light">
+<meta name="supported-color-schemes" content="light">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Type" content="text/html charset=UTF-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="color-scheme" content="light">
+    <meta name="supported-color-schemes" content="light">
     <title>{{subject}}</title>
     
      
@@ -47,8 +51,9 @@
         }
 
         * {
-            color:#090A0B;
-        }
+    color: #090A0B !important;
+    -webkit-text-fill-color: #090A0B !important;
+}
         
          
         body, table, td, p, a, li, blockquote {
@@ -100,16 +105,62 @@
                 text-align: center !important;
             }
         }
-    </style>
+u + .darkmode .gmail-blend-screen { background:#000; mix-blend-mode:screen; } 
+u + .darkmode .gmail-blend-difference { background:#000; mix-blend-mode:difference; }
+
+.darkmode p li span div td tr th { 
+    -webkit-text-fill-color: #090A0B !important;
+}
+@media (prefers-color-scheme: dark) {
+    body, table, td, p, a, li, blockquote, h1, h2, h3, h4, h5, h6, span, div {
+        color: #090A0B !important;
+        -webkit-text-fill-color: #090A0B !important;
+        background-color: transparent !important;
+    }
+}
+:root {
+    color-scheme: light only !important;
+}
+#outlook a {
+      padding: 0;
+    }
+/* iOS Mail and Gmail specific overrides */
+@supports (-webkit-touch-callout: none) {
+    * {
+        color: #090A0B !important;
+        -webkit-text-fill-color: #090A0B !important;
+    }
+}
+
+/* Gmail dark mode overrides */
+body[data-ogsc] *,
+body[data-ogsc] table,
+body[data-ogsc] td,
+body[data-ogsc] p,
+body[data-ogsc] span,
+body[data-ogsc] div,
+body[data-ogsc] h1,
+body[data-ogsc] h2 {
+    color: #090A0B !important;
+    -webkit-text-fill-color: #090A0B !important;
+}
+.gradient-bg{
+background: linear-gradient(199deg, #16A9B1 -30.61%, #FFFFFF 20.08% ) !important; 
+}
+@media (prefers-color-scheme: dark) {
+    .gradient-bg {
+        background: linear-gradient(199deg, #0f8a94 -30.61%, #2d2d2d 20.08%) !important;
+    }
+}
+</style>
 </head>
-<body style="margin: 0; padding: 0; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; background-color: #f8f9fa;">
+<body class="darkmode" bgcolor="#f8f9fa" style="margin: 0; padding: 0; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; background: linear-gradient(#f8f9fa, #f8f9fa)">
     
      
-    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="margin: 0; padding: 0;">
+    <table bgcolor="#ffffff"role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="margin: 0; padding: 0;">
         <tr>
             <td align="center" style="padding: 0;">
-                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="600" class="mobile-full-width" style="max-width:600px; width: 100%; background-color: #ffffff !important; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); background: linear-gradient(
-199deg, #16A9B1 -30.61%, #FFFFFF 20.08%); ">
+                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="600" class="mobile-full-width gradient-bg" style="max-width:600px; width: 100%; background:#fff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); "  >
                     <tr>
                         <td style="padding: 60px 30px 0 30px; text-align: center;" >
                             <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
@@ -167,7 +218,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <td style="background-color: #fff; padding: 40px 30px 0 30px; border-top: 1px solid #3939391A; " >
+                        <td style="background: linear-gradient(#fff, #fff) !important; padding: 40px 30px 0 30px; border-top: 1px solid #3939391A; " >
                             <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
                                 <tr>
                                     <td align="center" class="social-icons">
