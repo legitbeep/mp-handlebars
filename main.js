@@ -64,7 +64,7 @@ const AFFIRMATION_OBJ = {
 
 const templateData = {
   translated: {
-    path: "\\new-templates\\verify_user.handlebars",
+    path: "\\email-templates\\vent_gift_sender.handlebars",
     output: "\\output\\new-templates\\verify_user.html",
     outputPdf: "\\output\\new-tempaltes\\verify_user.pdf",
     data: {
@@ -103,6 +103,7 @@ const templateData = {
         name: "Superstar2",
         photo: "https://placehold.co/50x50",
       },
+      bgGradient: "../../assets/gradient-bg.svg",
       ...AFFIRMATION_OBJ,
       ...JOURNAL_OBJ,
       ...PAYMENT_OBJ,
