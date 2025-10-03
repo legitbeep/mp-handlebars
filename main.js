@@ -64,7 +64,7 @@ const AFFIRMATION_OBJ = {
 
 const templateData = {
   translated: {
-    path: "\\email-templates\\invoice.handlebars",
+    path: "\\email-templates\\signup_user.handlebars",
     output: "\\output\\new-templates\\verify_user.html",
     outputPdf: "\\output\\new-tempaltes\\verify_user.pdf",
     data: {
